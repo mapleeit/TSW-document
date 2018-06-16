@@ -1,0 +1,418 @@
+@charset "UTF-8";
+
+/*! -----------------------------------------------------------------
+[Master Stylesheet]
+
+Project:     MStone
+Version:     2.2
+
+------------------------------------------------------------------
+[General Styles]
+*/
+
+* {
+    -webkit-font-smoothing: antialiased;
+}
+
+html {
+    height: 100%;
+    font-size: 100%;
+}
+
+body {
+    background-color: #fff;
+    font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","WenQuanYi Micro Hei",sans-serif;
+    line-height: 1.8;
+    font-weight: 400;
+    font-size: 13px;
+    color: #828282;
+    -ms-overflow-style: scrollbar;
+    overflow-x: hidden;
+    position: relative;
+    height: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+iframe {
+    border: 0;
+}
+
+
+/*tsw-main*/
+.tsw-main{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.container-fluid {
+    box-sizing: border-box;
+}
+
+/*左边导航 side-nav*/
+.side-nav{
+    font-family: "Helvetica Neue","Hiragino Sans GB","Microsoft YaHei","\9ED1\4F53",Arial,sans-serif;
+    position: absolute;
+    top: 58px;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    overflow-y: auto;
+    width: 320px;
+    padding: 20px 0 50px 50px;
+    color: #364149;
+    background: #fff;
+    border-right: 1px solid rgba(0,0,0,.07);
+    -webkit-transition: left 250ms ease;
+    -moz-transition: left 250ms ease;
+    -o-transition: left 250ms ease;
+    transition: left 250ms ease;
+}
+.side-nav.open{
+    left: 0;
+}
+
+.side-nav .ul-side{
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+.side-nav li{
+    margin-top: 0.5em;
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+.side-nav h3{
+    letter-spacing: 2px;
+    margin:1.3em 0 0.3em;
+    cursor: pointer;
+    font-family: "Helvetica Neue","Hiragino Sans GB","Microsoft"; 
+}
+.side-nav .side-sub{
+    padding-left: 24px;
+    overflow: hidden;
+    -webkit-transition: height .3s cubic-bezier(.215,.61,.355,1);
+    -moz-transition: height .3s cubic-bezier(.215,.61,.355,1);
+    -o-transition: height .3s cubic-bezier(.215,.61,.355,1);
+    transition: height .3s cubic-bezier(.215,.61,.355,1);
+}
+.side-nav li a{
+    color: #364149;
+    cursor: pointer;
+}
+.side-nav li a.current, .ul-side li h3.current{
+    color: #e41919;
+}
+.side-nav .ul-side > li > a{
+    padding-left: 12px;
+    position: relative;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+}
+.side-nav .ul-side > li > a:before{
+    content: "";
+    width: 5px;
+    height: 8px;
+    background-image: url(../images/nav/arrow-right-default.png);
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    margin-top: -4px;
+    left: 2px;
+}
+.side-nav .ul-side > li > a.open:before{
+    width: 8px;
+    height: 5px;
+    background-image: url(../images/nav/arrow-down-default.png);
+    top: 50%;
+    margin-top: -2px;
+    left: 0;
+}
+
+.side-nav li a:hover{
+    color: #e41919;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+
+/*ul-menu*/
+.side-nav .ul-menu{
+    display: none;
+}
+.side-nav .ul-menu li{
+    position: relative;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+}
+
+
+/*右边内容 markdown盒子*/
+.guide-content{
+    position: absolute;
+    left: 320px;
+    top: 58px;
+    right: 0;
+    -webkit-overflow-scrolling: touch;
+    bottom: 0;
+    overflow: auto;
+    padding: 36px 2.5em 0;
+    z-index: 1;
+
+    -webkit-transition: left .3s cubic-bezier(.215,.61,.355,1);
+    -moz-transition: left .3s cubic-bezier(.215,.61,.355,1);
+    -ms-transition: left .3s cubic-bezier(.215,.61,.355,1);
+    -o-transition: left .3s cubic-bezier(.215,.61,.355,1);
+    transition: left .3s cubic-bezier(.215,.61,.355,1);
+
+    -webkit-box-sizing:content-box;   
+    -moz-box-sizing:content-box;  
+    -o-box-sizing:content-box;  
+    box-sizing:content-box; 
+}
+
+.guide-box{
+    position:relative;
+    margin:0 auto;
+    max-width: 900px;
+    display: block;
+    word-wrap: break-word;
+    overflow: hidden;
+    color: #333;
+    line-height: 1.7;
+    text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+
+    font-family: "Helvetica Neue","Hiragino Sans GB","Microsoft"; 
+    font-size: 15px;
+    padding-bottom: 5em;
+
+}
+.guide-box h1{
+    font-size: 1.75em;
+    font-family: "Helvetica Neue","Hiragino Sans GB","Microsoft"; 
+    margin-top: 0;
+    margin-bottom:.5em;
+    line-height: 1.7;
+    letter-spacing: 0.2px;
+    font-weight: 600;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.7em;
+}
+.guide-box h2{
+    font-size: 1.5em;
+    font-family: "Helvetica Neue","Hiragino Sans GB","Microsoft"; 
+    margin-top: 2em;
+    margin-bottom: .5em;
+    line-height: 1.7;
+    letter-spacing: 0.2px;
+    font-weight: 550;
+}
+.guide-box h3 {
+    font-size: 1.25em;
+    font-family: "Helvetica Neue","Hiragino Sans GB","Microsoft";
+}
+.guide-box h4 {
+    font-size: 1.1em;
+    font-family: "Helvetica Neue","Hiragino Sans GB","Microsoft";
+}
+.guide-box p{
+    line-height: 1.8;
+    letter-spacing: 0.2px;
+    margin-top: .8em;
+    margin-bottom: 0;
+}
+.guide-box > ul{
+    margin:0.8em 0 -0.8em;
+}
+.guide-box ul > li{
+    margin-bottom: .8em;
+}
+
+.guide-box ul{
+    padding-left: 1.5em;
+    list-style-type: none;
+}
+.guide-box ol{
+    padding-left: 1.5em;
+    list-style-type: decimal;
+}
+.guide-box ul > li{
+    margin-bottom: 0;
+    position: relative;
+    line-height: 1.8;
+}
+.guide-box ul > li:after{
+    content: "";
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: 0.8em;
+    left: -1em;
+    background-color: #666;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.guide-box > code{
+    width: 100%;
+    display: block;
+    overflow: auto;
+    word-wrap: normal;
+    margin: 0;
+    padding: .85em 1em;
+    margin-bottom: 1.275em;
+    background: #f7f7f7;
+}
+
+
+
+/* 大屏幕 */
+
+@media (min-width: 1450px) {
+    .guide-box{
+        margin-left: 6%;
+    }
+}
+@media (min-width: 1200px) {
+    .guide-content{
+        padding: 33px 8%;
+    }
+}
+
+/*mobile ipad*/
+@media (max-width: 991px) {
+    .inner-header{
+        float: none;
+        position: absolute;
+        left: 50%;
+        -webkit-transform:translateX(-50%);
+        -moz-transform:translateX(-50%);
+        -o-transform:translateX(-50%);
+        transform:translateX(-50%);
+    } 
+    .nav-toggle{
+        float: left;
+        padding: 0;
+    }
+    .nav-toggle > a{
+        vertical-align: middle;
+    }
+    .side-nav .ul-menu{
+        display: block;
+    }
+    .side-nav{
+        width: 270px;
+        padding-left: 20px;
+        left: -270px;
+    }
+    .guide-content{
+        padding-top: 20px;
+        left: 0;
+    }
+    
+    /* 头部菜单下拉隐藏 */
+    .inner-navigation{
+        display: none !important;
+    }
+
+}
+
+ 
+/* 平板电脑和小屏电脑之间的分辨率 */
+@media (min-width: 768px) and (max-width: 979px) {
+
+}
+ 
+/* 横向放置的手机和竖向放置的平板之间的分辨率 */
+@media (max-width: 767px) {
+
+}
+ 
+/* 横向放置的手机及分辨率更小的设备 */
+@media (max-width: 640px) {
+    .header.header-shadow{
+        height: 40px;
+    }
+    .guide-content,
+    .side-nav{
+        top: 40px;
+    }
+    .inner-brand img{
+        width: 60px;
+    }
+    .header .container, .header .container-fluid{
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+    .guide-content{
+        padding: 20px 1.45em 0;
+    }
+
+}
+
+/* 横向放置的手机及分辨率更小的设备 */
+@media (max-width: 480px) {
+
+
+}
+
+
+.mobile.wrapper {
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.mobile .container {
+    display: block;
+    
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.mobile .module-header {
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    overflow: hidden;
+    background-size: cover;
+}
+/* .mobile .module-header::before {
+    z-index: -1;
+    background-image: inherit;
+    filter: blur(20px);
+    transform: scale(1.5);
+} */
+.mobile .module-header .btn {
+    width: 100px;
+    padding: 0;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 5px;
+    
+    font-weight: normal;
+}
+.mobile .container .col-md-12 {
+    height: calc(100vh - 99px - 80px);
+    /* height: 100%; */
+    width: 100vw;
+    overflow: hidden;
+    box-sizing: border-box;
+    /* padding-left: 0;; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.mobile .container .social-icons {
+    display: none;
+}

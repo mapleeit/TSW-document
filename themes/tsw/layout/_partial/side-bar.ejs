@@ -1,0 +1,77 @@
+<div class="side-nav">
+    <!-- <% site.posts.forEach(item => { %>
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/<%= item.path %>" class="current"><%= item.path %></a>
+                </h3>
+            </li>
+        </ul>
+    <% }) %> -->
+
+    <ul class="ul-side">
+        <li>
+            <h3>
+                <a href="/guide/index" 
+                data-path="<%= page.path %>" 
+                class="<%= page.path ===  'guide/index/' ? 'current' : ''%>">概述</a>
+            </h3>
+        </li>
+    </ul>
+    <ul class="ul-side">
+        <li>
+            <h3>开始</h3>
+        </li>
+        <ul class="side-sub">
+            <li>
+                <a class="section-link <%= page.path ===  'guide/introduce/quickstart/' ? 'current' : ''%>"
+                href="/guide/introduce/quickstart" 
+                data-path="<%= page.path %>">快速开始</a>
+            </li>
+            <li>
+                <a class="section-link <%= page.path ===  'guide/introduce/framework/' ? 'current' : ''%>"
+                href="/guide/introduce/framework" 
+                data-path="<%= page.path %>">框架集成</a>
+            </li>
+            <li>
+                <a class="section-link <%= page.path ===  'guide/introduce/cloud/' ? 'current' : ''%>"
+                href="/guide/introduce/cloud" 
+                data-path="<%= page.path %>">开放平台</a>
+            </li>
+        </ul>
+    </ul>
+    <ul class="ul-side">
+        <li>
+            <h3>进阶</h3>
+        </li>
+        <ul class="side-sub">
+            <li>
+                <a class="section-link <%= page.path ===  'guide/advance/debug/' ? 'current' : ''%>"
+                href="/guide/advance/debug" 
+                data-path="<%= page.path %>">远程调试</a>
+            </li>
+            <li>
+                <a class="section-link <%= page.path ===  'guide/advance/private/' ? 'current' : ''%>"
+                href="/guide/advance/private" 
+                data-path="<%= page.path %>">私有化部署</a>
+            </li>
+            <li>
+                <a class="section-link <%= page.path ===  'guide/advance/h5test/' ? 'current' : ''%>"
+                href="/guide/advance/h5test" 
+                data-path="<%= page.path %>">测试环境</a>
+            </li>
+            <li>
+                <a class="section-link <%= page.path ===  'guide/advance/logger/' ? 'current' : ''%>"
+                href="/guide/advance/logger" 
+                data-path="<%= page.path %>">全息日志</a>
+            </li>
+        </ul>
+    </ul>
+    <ul class="ul-side">
+        <li>
+            <h3>
+                <a href="/guide/about" class="">关于</a>
+            </h3>
+        </li>
+    </ul>
+</div>

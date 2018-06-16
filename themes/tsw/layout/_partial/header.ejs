@@ -1,0 +1,38 @@
+<header class="header header-center header-light header-small header-shadow">
+    <div class="container-fluid">
+        <!-- Brand-->
+        <div class="inner-header">
+            <a class="inner-brand" href="/">
+                <img class="brand-dark" src="/images/logo.png" alt="tsw.js" title="tsw.js">
+                <img class="brand-light" src="/images/logo-light.png" alt="tsw.js" title="tsw.js">
+            </a>
+        </div>
+
+        <!-- Navigation-->
+        <div class="inner-navigation collapse">
+            <div class="inner-nav onepage-nav">
+                <ul>
+                    <% for (let menu in theme.menu){ %>
+                        <li>
+                            <a href="<%- url_for(theme.menu[menu]) %>">
+                                <span class="menu-item-span"><%= menu %></span>
+                            </a>
+                        </li>
+                    <% } %>
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- Mobile menu-->
+        <div class="nav-toggle">
+            <a href="#" data-toggle="collapse" data-target=".inner-navigation">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+        </div>
+
+    </div>
+
+</header>

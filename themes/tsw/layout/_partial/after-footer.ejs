@@ -1,0 +1,54 @@
+<script src="/js/jquery-2.2.4.min.js"></script>
+<script src="/js/popper.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/plugins.min.js"></script>
+<script>
+    var Page = function () {
+        var clickEvent = 'click';
+        var ui_a = $('.ul-side').children('li').children('a');
+        var li_h = $('.side-sub').eq(0).children('li').outerHeight(true);
+
+        var ul_a = $('.side-sub a');
+
+        var btn_menu = $('.nav-toggle a');
+        var side_nav = $('.side-nav');
+
+        return {
+            init: function () {
+                btn_menu.on(clickEvent, function () {
+                    if (!this.flag) {
+                        side_nav.addClass('open');
+                    } else {
+                        side_nav.removeClass('open');
+                    }
+                    this.flag = !this.flag;
+                });
+                ui_a.on(clickEvent, function () {
+
+                    var ul = $(this).next();
+                    var li_len = ul.children().length;
+
+
+                    if (!this.flag) {
+                        $(this).attr('class', 'current open');
+                        ul.css('height', li_len * li_h);
+                    } else {
+                        $(this).attr('class', '');
+                        ul.css('height', 0);
+                    }
+                    this.flag = !this.flag;
+
+                });
+
+                ul_a.on(clickEvent, function () {
+                    ul_a.attr('class', '');
+                    $(this).attr('class', 'current');
+
+                });
+                ui_a.eq(0).click();
+            }
+        }
+    }
+
+    Page().init();
+</script>
