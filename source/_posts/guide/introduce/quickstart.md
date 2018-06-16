@@ -1,3 +1,7 @@
+---
+title: 快速开始
+tags:
+---
 # 快速开始
 > hello world
 

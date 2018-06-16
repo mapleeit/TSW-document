@@ -1,3 +1,7 @@
+---
+title: 远程调试
+tags:
+---
 # TSW远程调试
 
 > TSW：表示TSW目录，如： /usr/local/services/TSW-1.0

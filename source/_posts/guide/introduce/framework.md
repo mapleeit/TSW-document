@@ -1,6 +1,10 @@
-#开源框架的集成
+---
+title: 框架集成
+tags:
+---
+# 开源框架的集成
 
-##示例代码
+## 示例代码
 
 参考配置文件 `TSW/examples/framework/config.js`
 
