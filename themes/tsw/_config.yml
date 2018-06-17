@@ -2,5 +2,12 @@
 menu:
   Github: https://github.com/Tencent/TSW
   教程: /guide/index
-  手册: /doc/api/index
-  关于: /guide/about
+  手册: /api/index
+  关于: /about/index
+
+# SideBar
+classes:
+  introduce: 开始
+  advance: 进阶
+  about: 关于
+  api: API
