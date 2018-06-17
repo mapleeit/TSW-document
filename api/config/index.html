@@ -1,0 +1,515 @@
+<html>
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="description" content="Document for TSW(Tencent Server Web)">
+    <meta name="author" content="adarzheng, maplemiao">
+
+    <title>this is a test</title>
+
+    <link rel="shortcut icon" href="favicon/favicon.png">
+    <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/animate.css" rel="stylesheet">
+    <link href="/css/template.css" rel="stylesheet">
+    <link href="/css/subpages.css" rel="stylesheet">
+    <link href="/css/highlight.min.css" rel="stylesheet">
+    <style type="text/css">
+        .guide-content .guide-box h4 {
+            margin: 25px 0 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header header-center header-light header-small header-shadow">
+    <div class="container-fluid">
+        <!-- Brand-->
+        <div class="inner-header">
+            <a class="inner-brand" href="/">
+                <img class="brand-dark" src="/images/logo.png" alt="tsw.js" title="tsw.js">
+                <img class="brand-light" src="/images/logo-light.png" alt="tsw.js" title="tsw.js">
+            </a>
+        </div>
+
+        <!-- Navigation-->
+        <div class="inner-navigation collapse">
+            <div class="inner-nav onepage-nav">
+                <ul>
+                    
+                        <li>
+                            <a href="https://github.com/Tencent/TSW">
+                                <span class="menu-item-span">Github</span>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="/guide/index">
+                                <span class="menu-item-span">教程</span>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="/api/index">
+                                <span class="menu-item-span">手册</span>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="/about/index">
+                                <span class="menu-item-span">关于</span>
+                            </a>
+                        </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- Mobile menu-->
+        <div class="nav-toggle">
+            <a href="#" data-toggle="collapse" data-target=".inner-navigation">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+        </div>
+
+    </div>
+
+</header>
+
+    <section class="tsw-main">
+        <!-- Side bar -->
+        <div class="side-nav">
+    
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+    
+    
+
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/api/ajax/" class="">api/ajax/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/api/config/" class="current">api/config/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/api/global/" class="">api/global/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/api/logger/" class="">api/logger/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/api/index/" class="">api/index/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/api/router/" class="">api/router/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/api/status/" class="">api/status/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/api/util/" class="">api/util/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/api/websocket/" class="">api/websocket/</a>
+                </h3>
+            </li>
+        </ul>
+    
+</div>
+
+        <div class="guide-content">
+    <div class="guide-box">
+        <!-- Content -->
+<p>#配置文件</p>
+<blockquote>
+<p>TSW全局配置文件，业务逻辑挂载点，也是一个模块~。</p>
+</blockquote>
+<h2 id="加载顺序"><a href="#加载顺序" class="headerlink" title="加载顺序"></a>加载顺序</h2><blockquote>
+<p>配置文件<code>config.js</code>加载顺序如下，<code>{TSW}</code>表示安装目录</p>
+</blockquote>
+<ol>
+<li><code>/etc/tsw.config.js</code></li>
+<li><code>/usr/local/node_modules/config.js</code></li>
+<li><code>/data/release/node_modules/config.js</code></li>
+<li><code>{TSW}/conf/config.js</code></li>
+</ol>
+<blockquote>
+<p>Example</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> config = plug(<span class="string">'config'</span>);</span><br></pre></td></tr></table></figure>
+<h2 id="开放平台"><a href="#开放平台" class="headerlink" title="开放平台"></a>开放平台</h2><ul>
+<li><code>appid</code> – <code>string</code> <code>tswjs.org</code>颁发的<code>appid</code>，默认<code>null</code></li>
+<li><code>appkey</code> – <code>string</code> <code>tswjs.org</code>颁发的<code>appkey</code>，默认<code>null</code>  <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">this</span>.appid = <span class="string">'tsw007'</span>;</span><br><span class="line"><span class="keyword">this</span>.appkey = <span class="string">'FuiFsFwe3asdF12sdwvkshk8'</span>;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="基础配置"><a href="#基础配置" class="headerlink" title="基础配置"></a>基础配置</h2><ul>
+<li><code>devMode</code> – <code>boolean</code> 开发者模式 ，本地代码修改后可立即生效，有损性能，默认<code>false</code></li>
+<li><code>httpAdminPort</code> – <code>number</code> http管理端口，只监听本地回路<code>127.0.0.1</code>，默认值<code>12701</code><ul>
+<li><code>reload</code> – <code>curl 127.0.0.1:12701/reload</code></li>
+</ul>
+</li>
+<li><code>runAtThisCpu</code> – <code>array|string</code> worker启动数量和cpu分配策略，默认值<code>auto</code><ul>
+<li><code>&#39;auto&#39;</code> – <code>string</code> 自动分配，核数x1</li>
+<li><code>[0,1]</code> – <code>array[number]</code> 手动分配，启动两个worker，分别绑定到cpu0和cpu1上</li>
+</ul>
+</li>
+<li><code>workerUid</code> – <code>string</code> worker运行时用户，默认值<code>&#39;nobody&#39;</code></li>
+<li><code>alphaFile</code> – <code>string</code> 指定<code>alpha</code>文件位置，用于固定的白名单，默认值<code>null</code></li>
+<li><code>alphaFileUrl</code> – <code>string</code> 指定<code>alpha</code>文件的网络位置，默认值<code>null</code></li>
+<li><code>blackIpFile</code> – <code>string</code> 指定<code>blackIp</code>文件位置，默认值<code>null</code></li>
+<li><code>blackIpFileUrl</code> – <code>string</code> 指定<code>blackIp</code>文件的网络位置，默认值<code>null</code></li>
+<li><code>cpuLimit</code> – <code>number</code> CPU使用限制，默认值<code>85</code>，每个worker独立生效，超过限制自动开启过载保护。</li>
+<li><code>memoryLimit</code> – <code>number</code> 内存使用限制，默认值<code>768MB</code>，每个worker独立生效，超过限制自动淘汰。</li>
+<li><code>CCIPLimit</code> – <code>number</code> CC检测预警阈值，默认值<code>400</code>,即聚集度达到<code>400‰</code>判定为恶意。<ul>
+<li><code>-1</code> – 表示关闭检测</li>
+</ul>
+</li>
+<li><code>CCIPLimitAutoBlock</code> – <code>boolean</code> CC检测，启用自动拉黑，默认值<code>false</code>。<code>1.1.3</code>新增</li>
+<li><code>logger</code> – <code>object</code> 日志级别<ul>
+<li><code>logLevel</code> – <code>{&#39;debug&#39;:10,&#39;info&#39;:20,&#39;warn&#39;:30,&#39;error&#39;:40,&#39;off&#39;:50}[&#39;info&#39;]</code></li>
+</ul>
+</li>
+<li><code>httpProxy</code> – <code>object</code> 全局http代理设置，为fiddler设计，对在win7下开发比较有用<ul>
+<li><code>ip</code> – <code>string</code> 默认值<code>&#39;127.0.0.1&#39;</code></li>
+<li><code>port</code> – <code>number</code> 默认值<code>8888</code></li>
+<li><code>enable</code> – <code>boolean</code> 是否启用，默认值<code>false</code></li>
+</ul>
+</li>
+<li><p><code>timeout</code> – <code>object</code> 全局超时控制，单位<code>ms</code></p>
+<ul>
+<li><code>post</code> – <code>bumber</code> <code>post like</code>请求处理超时，默认值30000</li>
+<li><code>get</code> – <code>bumber</code> <code>get like</code>请求处理超时，默认值10000</li>
+<li><code>socket</code> – <code>bumber</code> <code>socket</code>超时设置，默认值30000</li>
+<li><code>keepAlive</code> – <code>bumber</code> <code>keepAlive</code>超时设置，默认值0  <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">this</span>.timeout = &#123;</span><br><span class="line">    socket: <span class="number">30000</span>,</span><br><span class="line">    post: <span class="number">30000</span>,</span><br><span class="line">    get: <span class="number">10000</span>,</span><br><span class="line">    keepAlive: <span class="number">10000</span>,</span><br><span class="line">    dns: <span class="number">3000</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p><code>beforeStartup(cpu)</code> – <code>function</code> 启动完成前的回调</p>
+<ul>
+<li><code>cpu</code> – <code>number</code> 当前工作进程对应的<code>cpu</code>编号</li>
+</ul>
+</li>
+<li><code>ajaxDefaultOptions</code> – <code>object</code> <code>ajax</code>全局设置，默认值<code>null</code></li>
+<li><code>afterStartup(cpu)</code> – <code>function</code> 启动完成后的回调<ul>
+<li><code>cpu</code> – <code>number</code> 当前工作进程对应的<code>cpu</code>编号</li>
+</ul>
+</li>
+<li><code>extendMod</code> – <code>object</code> 支持重新定义TSW里部分方法的实现<ul>
+<li><code>getUid(request)</code> – <code>function</code> 重新定义从<code>request</code>解析<code>UID</code>的实现</li>
+<li><code>isTST(request)</code> – <code>function</code> 重新定义TST（安全扫描器）请求</li>
+</ul>
+</li>
+</ul>
+<h2 id="HTTP-HTTPS"><a href="#HTTP-HTTPS" class="headerlink" title="HTTP/HTTPS"></a>HTTP/HTTPS</h2><ul>
+<li><code>httpAddress</code> – <code>string</code> http网卡，推荐<code>&#39;0.0.0.0&#39;</code></li>
+<li><code>httpPort</code> – <code>number</code> http端口，默认<code>80</code>或者你喜欢的数字</li>
+<li><code>workerPortBase</code> – <code>number</code> worker起始端口，默认<code>12801</code>。比如<code>worker/7</code>对应的端口为<code>12801+7=12808</code><ul>
+<li>消息分发 – <code>websocket</code>场景下发送消息到指定worker里</li>
+</ul>
+</li>
+<li><code>httpsAddress</code> – <code>string</code> https网卡，推荐<code>&#39;0.0.0.0&#39;</code>，默认空</li>
+<li><code>httpsPort</code> – <code>number</code> https端口，默认空</li>
+<li><code>httpsOptions</code> – <code>object</code> https证书之类的，透传给<code>Node.js</code></li>
+<li><code>page404</code> – <code>string</code> 404公益页面路由</li>
+<li><code>page419</code> – <code>string</code> 419页面路由</li>
+<li><code>router</code> – <code>module</code> HTTP路由，需实现以下方法<ul>
+<li><code>name(req)</code> – <code>function</code> 负责<code>req.url</code>向<code>name</code>映射，让<code>url</code>收敛</li>
+<li><code>find(name,req,res)</code> – <code>function</code> 负责<code>name</code>向<code>module</code>映射，返回处理模块<ul>
+<li><code>module</code> – <code>function</code> http逻辑处理模块，<code>module.exports</code>需导出个函数</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>allowArrayInUrl</code> – <code>boolean</code> url解析参数时是否输出数组<ul>
+<li><code>默认值</code> – <code>false</code></li>
+<li><code>false</code> – 重复元素只取第一个</li>
+<li><code>true</code> – 重复元素装在数组里</li>
+</ul>
+</li>
+<li><code>allowHost</code> – <code>array[string|regex|object]</code> 对非法域名返回<code>508</code>，对内网IP无影响<ul>
+<li><code>默认值</code> – <code>[]</code>，空数组表示无限制</li>
+<li><code>string</code> – 字符串类型全匹配</li>
+<li><code>regex</code> – <code>regex</code>类型调用<code>regex.test(host)</code>方法匹配</li>
+<li><code>object</code> – <code>object</code>类型调用<code>object.test(host)</code>方法匹配</li>
+</ul>
+</li>
+</ul>
+<h2 id="websocket"><a href="#websocket" class="headerlink" title="websocket"></a>websocket</h2><ul>
+<li><code>wsRouter</code> – <code>module</code> websocket路由，需实现以下方法<ul>
+<li><code>name(ws)</code> – <code>function</code> 负责<code>ws.url</code>向<code>name</code>映射</li>
+<li><code>find(name,ws)</code> – <code>function</code> 负责<code>name</code>向<code>WebSocket module</code>映射<ul>
+<li><code>module</code> – <code>module</code> websocket逻辑处理模块，需实现以下方法<ul>
+<li><code>onConnection(ws)</code> – 连接建立的回调函数</li>
+<li><code>onMessage(ws,message)</code> – 收到消息的回调函数</li>
+<li><code>onClose(ws,code,reason)</code> – 连接关闭时的处理函数</li>
+<li><code>onError(ws,err)</code> – 连接出错时的处理函数</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="测试环境"><a href="#测试环境" class="headerlink" title="测试环境"></a>测试环境</h2><ul>
+<li><code>isTest</code> – <code>boolean</code> 测试环境标识 ，默认<code>false</code>，为<code>true</code>时自动发现</li>
+<li><code>testInfo</code> – <code>object</code> 测试环境信息<ul>
+<li><code>name</code> – <code>string</code> 名称</li>
+<li><code>group</code> – <code>string</code> 分组名，测试环境会根据分组自动聚合。</li>
+<li><code>groupName</code> – <code>string</code> 分组名称。</li>
+<li><code>desc</code> – <code>string</code> 测试环境描述</li>
+<li><code>order</code> – <code>number</code> 用于排序</li>
+<li><code>owner</code> – <code>string</code> 测试环境负责人  <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">this</span>.isTest = <span class="literal">true</span>;</span><br><span class="line"><span class="keyword">this</span>.testInfo = &#123;</span><br><span class="line">    <span class="string">"name"</span>      : <span class="string">"神秘商店"</span>,</span><br><span class="line">    <span class="string">"group"</span>     : <span class="string">"TSW"</span>,</span><br><span class="line">    <span class="string">"groupName"</span> : <span class="string">"TSW团队"</span>,</span><br><span class="line">    <span class="string">"desc"</span>      : <span class="string">"没有人能知道这里在售卖什么"</span>,</span><br><span class="line">    <span class="string">"order"</span>     : <span class="number">30</span>,</span><br><span class="line">    <span class="string">"owner"</span>     : <span class="string">"TSW"</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="开放平台OPENAPI"><a href="#开放平台OPENAPI" class="headerlink" title="开放平台OPENAPI"></a>开放平台OPENAPI</h2><ul>
+<li><code>logReportUrl</code> – <code>string</code> 染色日志上报，保持默认即可</li>
+<li><code>h5testSyncUrl</code> – <code>string</code> 测试环境同步，保持默认即可</li>
+<li><code>utilCDUrl</code> – <code>string</code> CD冷却池，保持默认即可</li>
+<li><code>appReportUrl</code> – <code>string</code> 指标上报，保持默认即可</li>
+<li><code>runtimeReportUrl</code> – <code>string</code> runtime告警，保持默认即可</li>
+</ul>
+<h2 id="私有化部署"><a href="#私有化部署" class="headerlink" title="私有化部署"></a>私有化部署</h2><ul>
+<li><p><code>skyMode</code> – <code>boolean</code> 天空模式 ，私有化部署时管理端标识，默认<code>false</code></p>
+  <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">this</span>.skyMode = <span class="literal">true</span>;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>memcached</code> – <code>object</code> 私有化部署时<code>memcached</code>地址声明，默认值<code>null</code></p>
+  <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">this</span>.memcached = &#123;</span><br><span class="line">    host : <span class="string">'127.0.0.1:11211'</span>,</span><br><span class="line">    timeout : <span class="number">500</span>,</span><br><span class="line">    poolSize : <span class="number">20</span>,</span><br><span class="line">    retries : <span class="number">1</span>,</span><br><span class="line">    maxQueueSize : <span class="number">1000</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>beforeReportLog(reportData)</code> – <code>function</code> 自定义日志上报</p>
+<ul>
+<li><code>reportData</code> – <code>object</code> 包含上报信息的对象，具体字段可打印出来观看</li>
+<li><code>返回值</code> – <code>boolean</code> 返回<code>false</code>会中断TSW的默认上报逻辑</li>
+</ul>
+</li>
+<li><code>beforeReportApp(reportData)</code> – <code>function</code> 自定义指标上报<ul>
+<li><code>reportData</code> – <code>object</code> 包含上报信息的对象，具体字段可打印出来观看</li>
+<li><code>返回值</code> – <code>boolean</code> 返回<code>false</code>会中断TSW的默认上报逻辑</li>
+</ul>
+</li>
+<li><code>beforeRuntimeReport(reportData)</code> – <code>function</code> 自定义Runtime上报<ul>
+<li><code>reportData</code> – <code>object</code> 包含上报信息的对象，具体字段可打印出来观看</li>
+<li><code>返回值</code> – <code>boolean</code> 返回<code>false</code>会中断TSW的默认上报逻辑</li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</div>
+    </section>
+
+    <!-- After footer scripts -->
+    <script src="/js/jquery-2.2.4.min.js"></script>
+<script src="/js/popper.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/plugins.min.js"></script>
+<script>
+    var Page = function () {
+        var clickEvent = 'click';
+        var ui_a = $('.ul-side').children('li').children('a');
+        var li_h = $('.side-sub').eq(0).children('li').outerHeight(true);
+
+        var ul_a = $('.side-sub a');
+
+        var btn_menu = $('.nav-toggle a');
+        var side_nav = $('.side-nav');
+
+        return {
+            init: function () {
+                btn_menu.on(clickEvent, function () {
+                    if (!this.flag) {
+                        side_nav.addClass('open');
+                    } else {
+                        side_nav.removeClass('open');
+                    }
+                    this.flag = !this.flag;
+                });
+                ui_a.on(clickEvent, function () {
+
+                    var ul = $(this).next();
+                    var li_len = ul.children().length;
+
+
+                    if (!this.flag) {
+                        $(this).attr('class', 'current open');
+                        ul.css('height', li_len * li_h);
+                    } else {
+                        $(this).attr('class', '');
+                        ul.css('height', 0);
+                    }
+                    this.flag = !this.flag;
+
+                });
+
+                ul_a.on(clickEvent, function () {
+                    ul_a.attr('class', '');
+                    $(this).attr('class', 'current');
+
+                });
+                ui_a.eq(0).click();
+            }
+        }
+    }
+
+    Page().init();
+</script>
+</body>
+</html>

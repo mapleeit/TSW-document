@@ -1,0 +1,382 @@
+<html>
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="description" content="Document for TSW(Tencent Server Web)">
+    <meta name="author" content="adarzheng, maplemiao">
+
+    <title>this is a test</title>
+
+    <link rel="shortcut icon" href="favicon/favicon.png">
+    <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/animate.css" rel="stylesheet">
+    <link href="/css/template.css" rel="stylesheet">
+    <link href="/css/subpages.css" rel="stylesheet">
+    <link href="/css/highlight.min.css" rel="stylesheet">
+    <style type="text/css">
+        .guide-content .guide-box h4 {
+            margin: 25px 0 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header header-center header-light header-small header-shadow">
+    <div class="container-fluid">
+        <!-- Brand-->
+        <div class="inner-header">
+            <a class="inner-brand" href="/">
+                <img class="brand-dark" src="/images/logo.png" alt="tsw.js" title="tsw.js">
+                <img class="brand-light" src="/images/logo-light.png" alt="tsw.js" title="tsw.js">
+            </a>
+        </div>
+
+        <!-- Navigation-->
+        <div class="inner-navigation collapse">
+            <div class="inner-nav onepage-nav">
+                <ul>
+                    
+                        <li>
+                            <a href="https://github.com/Tencent/TSW">
+                                <span class="menu-item-span">Github</span>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="/guide/index">
+                                <span class="menu-item-span">教程</span>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="/api/index">
+                                <span class="menu-item-span">手册</span>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="/about/index">
+                                <span class="menu-item-span">关于</span>
+                            </a>
+                        </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- Mobile menu-->
+        <div class="nav-toggle">
+            <a href="#" data-toggle="collapse" data-target=".inner-navigation">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+        </div>
+
+    </div>
+
+</header>
+
+    <section class="tsw-main">
+        <!-- Side bar -->
+        <div class="side-nav">
+    
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+    
+    
+
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/guide/index/" class="">guide/index/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/guide/advance/debug/" class="">guide/advance/debug/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/guide/advance/h5test/" class="current">guide/advance/h5test/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/guide/advance/logger/" class="">guide/advance/logger/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/guide/advance/private/" class="">guide/advance/private/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/guide/introduce/cloud/" class="">guide/introduce/cloud/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/guide/introduce/framework/" class="">guide/introduce/framework/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/guide/introduce/quickstart/" class="">guide/introduce/quickstart/</a>
+                </h3>
+            </li>
+        </ul>
+    
+</div>
+
+        <div class="guide-content">
+    <div class="guide-box">
+        <!-- Content -->
+<h1 id="测试环境"><a href="#测试环境" class="headerlink" title="测试环境"></a>测试环境</h1><blockquote>
+<p>用户维度切换测试环境</p>
+</blockquote>
+<h2 id="添加"><a href="#添加" class="headerlink" title="添加"></a>添加</h2><p>增加如下配置项，重启，测试环境列表里会自动出现</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">this</span>.isTest = <span class="literal">true</span>;</span><br><span class="line"><span class="keyword">this</span>.testInfo = &#123;</span><br><span class="line">    <span class="string">"name"</span>      : <span class="string">"神秘商店"</span>,</span><br><span class="line">    <span class="string">"group"</span>     : <span class="string">"TSW"</span>,</span><br><span class="line">    <span class="string">"groupName"</span> : <span class="string">"TSW团队"</span>,</span><br><span class="line">    <span class="string">"desc"</span>      : <span class="string">"没有人能知道这里在售卖什么"</span>,</span><br><span class="line">    <span class="string">"order"</span>     : <span class="number">30</span>,</span><br><span class="line">    <span class="string">"owner"</span>     : <span class="string">"TSW"</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<h2 id="切换"><a href="#切换" class="headerlink" title="切换"></a>切换</h2><ol>
+<li>开放平台切换<ol>
+<li>登录<code>https://tswjs.org</code></li>
+<li>选择要切换的应用</li>
+<li>点击测试环境，进行切换</li>
+</ol>
+</li>
+<li>私有化部署切换<ol>
+<li>直接访问<code>http://${host}/group</code><ul>
+<li><code>host</code> – 表示实际部署的管理端域名或IP</li>
+</ul>
+</li>
+<li>选择分组，进行切换</li>
+</ol>
+</li>
+</ol>
+<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ol>
+<li>生效时间 – 切换测试环境后，1分钟后全网生效</li>
+<li>有效期 – 测试环境当天有效，0点自动失效</li>
+<li>用户标识 – 在请求周期内可以设置用户<code>UID</code>用来染色，但对测试环境联动只有以下两种途径<ol>
+<li>在路由的<code>name</code>阶段，设置<code>UID</code></li>
+<li>在<code>config.js</code>中，重新定义从<code>request</code>解析<code>UID</code>的实现 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">this</span>.extendMod = &#123;</span><br><span class="line">    getUin: <span class="function"><span class="keyword">function</span>(<span class="params">request</span>)</span>&#123;</span><br><span class="line">        <span class="keyword">const</span> uid;</span><br><span class="line">         <span class="comment">//code...</span></span><br><span class="line">        <span class="keyword">return</span> uid;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><ol>
+<li>TSW会维护一个<code>UID</code>到测试环境<code>IP+PORT</code>的路由表</li>
+<li>命中路由表的请求，流式转发给测试环境</li>
+</ol>
+<h2 id="故障排除"><a href="#故障排除" class="headerlink" title="故障排除"></a>故障排除</h2><ul>
+<li>配置测试环境后，未出现在测试环境列表里时，排查清单<ol>
+<li>确认是Linux环境</li>
+<li>确认<code>config.isTest</code>是否为<code>true</code><ul>
+<li>可使用工具<code>TSW/bin/proxy/dump.config.sh</code>查看目前生效的配置文件对象</li>
+</ul>
+</li>
+<li>排查<code>TSW/log/run.log.0</code>日志中是否有错误日志</li>
+<li>排查<code>openapi.tswjs.org</code>域名是否连通，特别是<code>443</code>端口</li>
+<li>确认<code>appid+appkey</code>无误，并重启使其生效</li>
+<li>如果以上还不能解决，直接联系TSW协助排查</li>
+</ol>
+</li>
+</ul>
+
+    </div>
+</div>
+    </section>
+
+    <!-- After footer scripts -->
+    <script src="/js/jquery-2.2.4.min.js"></script>
+<script src="/js/popper.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/plugins.min.js"></script>
+<script>
+    var Page = function () {
+        var clickEvent = 'click';
+        var ui_a = $('.ul-side').children('li').children('a');
+        var li_h = $('.side-sub').eq(0).children('li').outerHeight(true);
+
+        var ul_a = $('.side-sub a');
+
+        var btn_menu = $('.nav-toggle a');
+        var side_nav = $('.side-nav');
+
+        return {
+            init: function () {
+                btn_menu.on(clickEvent, function () {
+                    if (!this.flag) {
+                        side_nav.addClass('open');
+                    } else {
+                        side_nav.removeClass('open');
+                    }
+                    this.flag = !this.flag;
+                });
+                ui_a.on(clickEvent, function () {
+
+                    var ul = $(this).next();
+                    var li_len = ul.children().length;
+
+
+                    if (!this.flag) {
+                        $(this).attr('class', 'current open');
+                        ul.css('height', li_len * li_h);
+                    } else {
+                        $(this).attr('class', '');
+                        ul.css('height', 0);
+                    }
+                    this.flag = !this.flag;
+
+                });
+
+                ul_a.on(clickEvent, function () {
+                    ul_a.attr('class', '');
+                    $(this).attr('class', 'current');
+
+                });
+                ui_a.eq(0).click();
+            }
+        }
+    }
+
+    Page().init();
+</script>
+</body>
+</html>

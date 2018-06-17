@@ -1,0 +1,415 @@
+<html>
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="description" content="Document for TSW(Tencent Server Web)">
+    <meta name="author" content="adarzheng, maplemiao">
+
+    <title>this is a test</title>
+
+    <link rel="shortcut icon" href="favicon/favicon.png">
+    <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/animate.css" rel="stylesheet">
+    <link href="/css/template.css" rel="stylesheet">
+    <link href="/css/subpages.css" rel="stylesheet">
+    <link href="/css/highlight.min.css" rel="stylesheet">
+    <style type="text/css">
+        .guide-content .guide-box h4 {
+            margin: 25px 0 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header header-center header-light header-small header-shadow">
+    <div class="container-fluid">
+        <!-- Brand-->
+        <div class="inner-header">
+            <a class="inner-brand" href="/">
+                <img class="brand-dark" src="/images/logo.png" alt="tsw.js" title="tsw.js">
+                <img class="brand-light" src="/images/logo-light.png" alt="tsw.js" title="tsw.js">
+            </a>
+        </div>
+
+        <!-- Navigation-->
+        <div class="inner-navigation collapse">
+            <div class="inner-nav onepage-nav">
+                <ul>
+                    
+                        <li>
+                            <a href="https://github.com/Tencent/TSW">
+                                <span class="menu-item-span">Github</span>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="/guide/index">
+                                <span class="menu-item-span">教程</span>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="/api/index">
+                                <span class="menu-item-span">手册</span>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="/about/index">
+                                <span class="menu-item-span">关于</span>
+                            </a>
+                        </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- Mobile menu-->
+        <div class="nav-toggle">
+            <a href="#" data-toggle="collapse" data-target=".inner-navigation">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+        </div>
+
+    </div>
+
+</header>
+
+    <section class="tsw-main">
+        <!-- Side bar -->
+        <div class="side-nav">
+    
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+    
+    
+
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/api/ajax/" class="">api/ajax/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/api/config/" class="">api/config/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/api/global/" class="current">api/global/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/api/logger/" class="">api/logger/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/api/index/" class="">api/index/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/api/router/" class="">api/router/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/api/status/" class="">api/status/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/api/util/" class="">api/util/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/api/websocket/" class="">api/websocket/</a>
+                </h3>
+            </li>
+        </ul>
+    
+</div>
+
+        <div class="guide-content">
+    <div class="guide-box">
+        <!-- Content -->
+<p>#全局变量</p>
+<h2 id="加载TSW内置模块"><a href="#加载TSW内置模块" class="headerlink" title="加载TSW内置模块"></a>加载TSW内置模块</h2><blockquote>
+<p><code>plug</code>用来加载server内置模块，用法同<code>require(id)</code></p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> logger = plug(<span class="string">'logger'</span>);</span><br><span class="line"><span class="keyword">const</span> ajax = plug(<span class="string">'ajax'</span>);</span><br><span class="line"><span class="keyword">const</span> config = plug(<span class="string">'config'</span>);</span><br></pre></td></tr></table></figure>
+<h2 id="上下文对象context"><a href="#上下文对象context" class="headerlink" title="上下文对象context"></a>上下文对象context</h2><ul>
+<li><p>特性</p>
+<ol>
+<li>供TSW内部使用，生命周期与<code>request</code>绑定</li>
+<li><code>context</code> 等价与 <code>global.context</code></li>
+<li>同一个<code>request</code>生命周期内只能访问自己的<code>context</code>对象</li>
+</ol>
+</li>
+<li><p>context</p>
+<ul>
+<li><code>context.window</code> – <code>window</code>对象</li>
+<li><code>context.autoParseBody</code> – <code>boolean</code> 为<code>false</code>时可关闭TSW自带的body解析<ul>
+<li>设置时机 – <code>config.router.name()</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="上下文对象window"><a href="#上下文对象window" class="headerlink" title="上下文对象window"></a>上下文对象window</h2><ul>
+<li><p>特性</p>
+<ol>
+<li>供业务使用，生命周期与<code>request</code>绑定</li>
+<li><code>window</code> 等价与 <code>global.window</code></li>
+<li>同一个<code>request</code>生命周期内只能访问自己的<code>window</code>对象</li>
+</ol>
+</li>
+<li><p>window</p>
+<ul>
+<li><code>window.disable()</code> – 禁用全局变量<code>window</code><ul>
+<li>禁用后，可以通过 <code>context.window</code>来访问<code>window</code></li>
+</ul>
+</li>
+<li><code>window.enable()</code> – 启用全局变量<code>window</code></li>
+<li><code>window.onerror = fn</code> – 定制错误页</li>
+<li><code>window.response</code> – <code>response</code>原始对象</li>
+<li><code>window.request</code> – <code>request</code>原始对象<ul>
+<li><code>request.cookies</code> – <code>cookie</code>的解析结果</li>
+<li><code>request.REQUEST</code> – <code>request.url</code>的解析结果</li>
+<li><code>request.params</code> – 默认值<code>{}</code></li>
+<li><code>request.GET</code> – GET参数</li>
+<li><code>request.POST</code> – POST参数<ul>
+<li><code>application/x-www-form-urlencoded</code> – 自动解析，字符集<code>UTF-8</code></li>
+<li><code>application/json</code> – 自动解析，字符集<code>UTF-8</code></li>
+<li><code>multipart/form-data</code> – 因涉及二进制流式收包，不会自动解析</li>
+</ul>
+</li>
+<li><code>request.param(key,[defaultValue])</code><ul>
+<li>按照优先级<code>params &gt; GET &gt; POST &gt; defaultValue</code>返回非<code>null</code>值</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>window.websocket</code> – 触发<code>message</code>事件的<code>websocket</code>对象，详情查看<a href="https://tswjs.org/doc/api/websocket" target="_blank" rel="noopener">websocket对象</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="当前核CPU使用率"><a href="#当前核CPU使用率" class="headerlink" title="当前核CPU使用率"></a>当前核CPU使用率</h2><ul>
+<li>cpuUsed<ul>
+<li>取值范围：0-100</li>
+<li>更新周期：5秒</li>
+</ul>
+</li>
+</ul>
+<h2 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h2><ul>
+<li>TSW_HTTP_WORKER_PORT<ul>
+<li>当前worker对应的私有端口，可用于websocket转发消息等场景</li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</div>
+    </section>
+
+    <!-- After footer scripts -->
+    <script src="/js/jquery-2.2.4.min.js"></script>
+<script src="/js/popper.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/plugins.min.js"></script>
+<script>
+    var Page = function () {
+        var clickEvent = 'click';
+        var ui_a = $('.ul-side').children('li').children('a');
+        var li_h = $('.side-sub').eq(0).children('li').outerHeight(true);
+
+        var ul_a = $('.side-sub a');
+
+        var btn_menu = $('.nav-toggle a');
+        var side_nav = $('.side-nav');
+
+        return {
+            init: function () {
+                btn_menu.on(clickEvent, function () {
+                    if (!this.flag) {
+                        side_nav.addClass('open');
+                    } else {
+                        side_nav.removeClass('open');
+                    }
+                    this.flag = !this.flag;
+                });
+                ui_a.on(clickEvent, function () {
+
+                    var ul = $(this).next();
+                    var li_len = ul.children().length;
+
+
+                    if (!this.flag) {
+                        $(this).attr('class', 'current open');
+                        ul.css('height', li_len * li_h);
+                    } else {
+                        $(this).attr('class', '');
+                        ul.css('height', 0);
+                    }
+                    this.flag = !this.flag;
+
+                });
+
+                ul_a.on(clickEvent, function () {
+                    ul_a.attr('class', '');
+                    $(this).attr('class', 'current');
+
+                });
+                ui_a.eq(0).click();
+            }
+        }
+    }
+
+    Page().init();
+</script>
+</body>
+</html>

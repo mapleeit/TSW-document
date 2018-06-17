@@ -1,0 +1,375 @@
+<html>
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="description" content="Document for TSW(Tencent Server Web)">
+    <meta name="author" content="adarzheng, maplemiao">
+
+    <title>this is a test</title>
+
+    <link rel="shortcut icon" href="favicon/favicon.png">
+    <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/animate.css" rel="stylesheet">
+    <link href="/css/template.css" rel="stylesheet">
+    <link href="/css/subpages.css" rel="stylesheet">
+    <link href="/css/highlight.min.css" rel="stylesheet">
+    <style type="text/css">
+        .guide-content .guide-box h4 {
+            margin: 25px 0 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header header-center header-light header-small header-shadow">
+    <div class="container-fluid">
+        <!-- Brand-->
+        <div class="inner-header">
+            <a class="inner-brand" href="/">
+                <img class="brand-dark" src="/images/logo.png" alt="tsw.js" title="tsw.js">
+                <img class="brand-light" src="/images/logo-light.png" alt="tsw.js" title="tsw.js">
+            </a>
+        </div>
+
+        <!-- Navigation-->
+        <div class="inner-navigation collapse">
+            <div class="inner-nav onepage-nav">
+                <ul>
+                    
+                        <li>
+                            <a href="https://github.com/Tencent/TSW">
+                                <span class="menu-item-span">Github</span>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="/guide/index">
+                                <span class="menu-item-span">教程</span>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="/api/index">
+                                <span class="menu-item-span">手册</span>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="/about/index">
+                                <span class="menu-item-span">关于</span>
+                            </a>
+                        </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- Mobile menu-->
+        <div class="nav-toggle">
+            <a href="#" data-toggle="collapse" data-target=".inner-navigation">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+        </div>
+
+    </div>
+
+</header>
+
+    <section class="tsw-main">
+        <!-- Side bar -->
+        <div class="side-nav">
+    
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+    
+    
+
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/guide/index/" class="">guide/index/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/guide/advance/debug/" class="">guide/advance/debug/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/guide/advance/h5test/" class="">guide/advance/h5test/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/guide/advance/logger/" class="">guide/advance/logger/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/guide/advance/private/" class="current">guide/advance/private/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/guide/introduce/cloud/" class="">guide/introduce/cloud/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/guide/introduce/framework/" class="">guide/introduce/framework/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/guide/introduce/quickstart/" class="">guide/introduce/quickstart/</a>
+                </h3>
+            </li>
+        </ul>
+    
+</div>
+
+        <div class="guide-content">
+    <div class="guide-box">
+        <!-- Content -->
+<h1 id="私有化部署"><a href="#私有化部署" class="headerlink" title="私有化部署"></a>私有化部署</h1><blockquote>
+<p>如果你的团队有一定的运维能力，私有化部署是不错的选择。</p>
+</blockquote>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ol>
+<li><code>Memcached</code>集群一个：用于状态保持和冷却池</li>
+<li>管理端服务器：用于开启<code>skyMode</code>管理端</li>
+</ol>
+<h2 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h2><ol>
+<li><code>config.js</code>增加<code>memcached</code>配置</li>
+<li>不需要配置<code>appid</code>和<code>appkey</code>，如果有，去掉即可</li>
+<li>示例如下 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">this</span>.memcached = &#123;</span><br><span class="line">    host        : <span class="string">'127.0.0.1:11211'</span>,</span><br><span class="line">    timeout     : <span class="number">500</span>,</span><br><span class="line">    poolSize    : <span class="number">20</span>,</span><br><span class="line">    retries     : <span class="number">1</span>,</span><br><span class="line">    maxQueueSize: <span class="number">1000</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="开启管理端"><a href="#开启管理端" class="headerlink" title="开启管理端"></a>开启管理端</h2><ol>
+<li><code>config.js</code>增加<code>memcached</code>配置，同上</li>
+<li><code>config.js</code>增加<code>skyMode</code>配置</li>
+<li>然后在浏览器直接访问即可 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">this</span>.skyMode = <span class="literal">true</span>;</span><br><span class="line"><span class="keyword">this</span>.memcached = &#123;</span><br><span class="line">    host        : <span class="string">'127.0.0.1:11211'</span>,</span><br><span class="line">    timeout     : <span class="number">500</span>,</span><br><span class="line">    poolSize    : <span class="number">20</span>,</span><br><span class="line">    retries     : <span class="number">1</span>,</span><br><span class="line">    maxQueueSize: <span class="number">1000</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="集成"><a href="#集成" class="headerlink" title="集成"></a>集成</h2><blockquote>
+<p>因为私有化部署的网络特殊性，<br>管理端只提供了最基础的<code>抓包</code>、<code>测试环境</code>、<code>临时染色</code>能力，<br>其它能力需自行扩展，与已有运维系统集成。<br>可集成的能力如下：</p>
+</blockquote>
+<ol>
+<li><code>config.beforeReportLog(reportData)</code> – 自定义日志上报，可与日志系统集成</li>
+<li><code>config.beforeReportApp(reportData)</code> – 自定义指标上报，可与监控系统集成</li>
+<li><code>config.beforeRuntimeReport(reportData)</code> – 自定义Runtime上报，可与告警推送集成</li>
+</ol>
+<h2 id="运维平台织云lite"><a href="#运维平台织云lite" class="headerlink" title="运维平台织云lite"></a>运维平台织云lite</h2><blockquote>
+<p>如何高效安全的在生产环境对TSW进行快速批量部署、起停和升级等维护操作，得各个使用者自己去搞定，<br>如果没有一个称手的运维平台，还是有点费劲的，好马配好鞍，织云lite为TSW提供了一些列自动打包的脚本，<br>在您的生产环境部署了织云lite的前提下，一键执行脚本，就能将Nodejs、TSW在织云lite上打包，<br>带来下述维护上的便利：<br>详情请参阅 <a href="http://bbs.coc.tencent.com/forum.php?mod=viewthread&amp;tid=63" target="_blank" rel="noopener">《如何通过织云lite玩转TSW》</a></p>
+</blockquote>
+<ul>
+<li>织云Lite 是一款轻量型服务管理平台，提供标准化的应用打包操作，可连接持续集成系统，完成线上程序分发，轻松实现进程管理。<ul>
+<li>文件包组织：进程依赖的库、配置文件、工具脚本打成文件包。</li>
+<li>版本迭代管理：可视化管理文件包，及对应版本安装的机器列表。</li>
+<li>秒级发布回滚：每次版本变更只需增量传送变动文件，敏捷高效。</li>
+<li>集中式管理：收拢发布入口，避免操作冲突，方便协同操作。</li>
+<li>操作查询：统一查询入口，所有现网变更一目了然。</li>
+<li>进程管理：可以定制每个进程的启停方式，挂掉后自动拉起。</li>
+<li>织云lite的<a href="http://bbs.coc.tencent.com/forum.php?mod=viewthread&amp;tid=24" target="_blank" rel="noopener">安装部署传送门</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</div>
+    </section>
+
+    <!-- After footer scripts -->
+    <script src="/js/jquery-2.2.4.min.js"></script>
+<script src="/js/popper.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/plugins.min.js"></script>
+<script>
+    var Page = function () {
+        var clickEvent = 'click';
+        var ui_a = $('.ul-side').children('li').children('a');
+        var li_h = $('.side-sub').eq(0).children('li').outerHeight(true);
+
+        var ul_a = $('.side-sub a');
+
+        var btn_menu = $('.nav-toggle a');
+        var side_nav = $('.side-nav');
+
+        return {
+            init: function () {
+                btn_menu.on(clickEvent, function () {
+                    if (!this.flag) {
+                        side_nav.addClass('open');
+                    } else {
+                        side_nav.removeClass('open');
+                    }
+                    this.flag = !this.flag;
+                });
+                ui_a.on(clickEvent, function () {
+
+                    var ul = $(this).next();
+                    var li_len = ul.children().length;
+
+
+                    if (!this.flag) {
+                        $(this).attr('class', 'current open');
+                        ul.css('height', li_len * li_h);
+                    } else {
+                        $(this).attr('class', '');
+                        ul.css('height', 0);
+                    }
+                    this.flag = !this.flag;
+
+                });
+
+                ul_a.on(clickEvent, function () {
+                    ul_a.attr('class', '');
+                    $(this).attr('class', 'current');
+
+                });
+                ui_a.eq(0).click();
+            }
+        }
+    }
+
+    Page().init();
+</script>
+</body>
+</html>

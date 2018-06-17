@@ -1,0 +1,402 @@
+<html>
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="description" content="Document for TSW(Tencent Server Web)">
+    <meta name="author" content="adarzheng, maplemiao">
+
+    <title>this is a test</title>
+
+    <link rel="shortcut icon" href="favicon/favicon.png">
+    <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/animate.css" rel="stylesheet">
+    <link href="/css/template.css" rel="stylesheet">
+    <link href="/css/subpages.css" rel="stylesheet">
+    <link href="/css/highlight.min.css" rel="stylesheet">
+    <style type="text/css">
+        .guide-content .guide-box h4 {
+            margin: 25px 0 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header header-center header-light header-small header-shadow">
+    <div class="container-fluid">
+        <!-- Brand-->
+        <div class="inner-header">
+            <a class="inner-brand" href="/">
+                <img class="brand-dark" src="/images/logo.png" alt="tsw.js" title="tsw.js">
+                <img class="brand-light" src="/images/logo-light.png" alt="tsw.js" title="tsw.js">
+            </a>
+        </div>
+
+        <!-- Navigation-->
+        <div class="inner-navigation collapse">
+            <div class="inner-nav onepage-nav">
+                <ul>
+                    
+                        <li>
+                            <a href="https://github.com/Tencent/TSW">
+                                <span class="menu-item-span">Github</span>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="/guide/index">
+                                <span class="menu-item-span">教程</span>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="/api/index">
+                                <span class="menu-item-span">手册</span>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="/about/index">
+                                <span class="menu-item-span">关于</span>
+                            </a>
+                        </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- Mobile menu-->
+        <div class="nav-toggle">
+            <a href="#" data-toggle="collapse" data-target=".inner-navigation">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+        </div>
+
+    </div>
+
+</header>
+
+    <section class="tsw-main">
+        <!-- Side bar -->
+        <div class="side-nav">
+    
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+    
+    
+
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/api/ajax/" class="">api/ajax/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/api/config/" class="">api/config/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/api/global/" class="">api/global/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/api/logger/" class="">api/logger/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/api/index/" class="">api/index/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/api/router/" class="">api/router/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/api/status/" class="">api/status/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/api/util/" class="current">api/util/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/api/websocket/" class="">api/websocket/</a>
+                </h3>
+            </li>
+        </ul>
+    
+</div>
+
+        <div class="guide-content">
+    <div class="guide-box">
+        <!-- Content -->
+<p>#常用工具</p>
+<h2 id="内网IP"><a href="#内网IP" class="headerlink" title="内网IP"></a>内网IP</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> serverInfo = plug(<span class="string">'serverInfo'</span>);</span><br><span class="line">serverInfo.intranetIp;	<span class="comment">//服务器内网IP</span></span><br></pre></td></tr></table></figure>
+<h2 id="判断win7-mac环境"><a href="#判断win7-mac环境" class="headerlink" title="判断win7/mac环境"></a>判断win7/mac环境</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> isWindows = plug(<span class="string">'util/isWindows'</span>);</span><br><span class="line">isWindows.isWin32Like; <span class="comment">//true | false</span></span><br></pre></td></tr></table></figure>
+<h2 id="染色标记"><a href="#染色标记" class="headerlink" title="染色标记"></a>染色标记</h2><blockquote>
+<p>alpha工具类</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> alpha = plug(<span class="string">'util/alpha'</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//当前请求</span></span><br><span class="line">alpha.isAlpha();</span><br><span class="line"></span><br><span class="line"><span class="comment">//指定uid</span></span><br><span class="line">alpha.isAlpha(uid);</span><br></pre></td></tr></table></figure>
+<h2 id="Deferred"><a href="#Deferred" class="headerlink" title="Deferred"></a>Deferred</h2><blockquote>
+<p>基于jQuery.Deferred源码</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> Deferred = plug(<span class="string">'util/Deferred'</span>);</span><br><span class="line"><span class="keyword">const</span> defer1 = Deferred.create();</span><br><span class="line"><span class="keyword">const</span> defer2 = Deferred.create();</span><br><span class="line"></span><br><span class="line">defer1.done(<span class="function"><span class="keyword">function</span>(<span class="params">ret</span>)</span>&#123;</span><br><span class="line">    <span class="comment">//xxx</span></span><br><span class="line">&#125;).fail(<span class="function"><span class="keyword">function</span>(<span class="params">ret</span>)</span>&#123;</span><br><span class="line">    <span class="comment">//xxx</span></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">Deferred.when(defer1,defer2).done(<span class="function"><span class="keyword">function</span>(<span class="params">ret1,ret2</span>)</span>&#123;</span><br><span class="line">    <span class="comment">//xxx</span></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">//转为Promise对象</span></span><br><span class="line">defer1.toES6Promies().then(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="comment">//xxx</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h2 id="gzip-chunked"><a href="#gzip-chunked" class="headerlink" title="gzip+chunked"></a>gzip+chunked</h2><blockquote>
+<p>用于流式回包</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> gzipHttp = plug(<span class="string">'util/gzipHttp'</span>);</span><br><span class="line"><span class="keyword">const</span> gzip = gzipHttp.create();</span><br><span class="line"></span><br><span class="line">gzip.write(chunked1,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.flush();</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">gzip.write(chunked2,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.flush();</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">gzip.end();</span><br></pre></td></tr></table></figure>
+<ul>
+<li>gzipHttp.create([opt]) – 返回一个gzip流。<ul>
+<li><code>opt</code> – <code>object</code><ul>
+<li><code>request</code> – 默认<code>window.request</code></li>
+<li><code>response</code> – 默认<code>window.response</code></li>
+<li><code>code</code> – <code>bumber</code> 响应代码，默认<code>200</code></li>
+<li><code>etag</code> – <code>string</code> Etag，默认<code>null</code></li>
+<li><code>offline</code> – <code>string</code> 是否离线，<code>webso</code>下有效，决定<code>cache-offline</code>的值，默认<code>false</code><ul>
+<li><code>true</code> – 离线，并立即更新<code>webview</code></li>
+<li><code>store</code> – 仅存储</li>
+<li><code>false</code> – 不离线</li>
+</ul>
+</li>
+<li><code>cache</code> – <code>string</code> 对应Cache-Control，默认<code>no-cache</code></li>
+<li><code>contentType</code> – <code>string</code> 默认<code>text/html; charset=UTF-8</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="http工具"><a href="#http工具" class="headerlink" title="http工具"></a>http工具</h2><blockquote>
+<p>http相关的工具类</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> httpUtil = plug(<span class="string">'util/http'</span>);</span><br><span class="line"><span class="keyword">const</span> userIp = httpUtil.getUserIp();</span><br><span class="line"><span class="keyword">const</span> reqStr = httpUtil.getRequestHeaderStr();</span><br><span class="line"><span class="keyword">const</span> resStr = httpUtil.getResponseHeaderStr();</span><br><span class="line"><span class="keyword">const</span> isSent = httpUtil.isSent();</span><br><span class="line"><span class="keyword">const</span> isInner = httpUtil.isInnerIP(<span class="string">'127.0.0.1'</span>);</span><br></pre></td></tr></table></figure>
+<ul>
+<li><code>httpUtil.getUserIp([request])</code> – 获取用户IP<ul>
+<li><code>request</code> – 请求，缺省值为<code>window.request</code></li>
+</ul>
+</li>
+<li><code>httpUtil.getRequestHeaderStr([request])</code> – 获取请求头字符串<ul>
+<li><code>request</code> – 请求，缺省值为<code>window.request</code></li>
+</ul>
+</li>
+<li><code>httpUtil.getResponseHeaderStr([response])</code> – 获取响应头字符串<ul>
+<li><code>response</code> – 请求，缺省值为<code>window.response</code></li>
+</ul>
+</li>
+<li><code>httpUtil.isSent([response])</code> – 判断响应头是否已发送<ul>
+<li><code>response</code> – 请求，缺省值为<code>window.response</code></li>
+</ul>
+</li>
+<li><code>httpUtil.isInnerIP(ip)</code> – 是否内网ip<ul>
+<li><code>ip</code> – <code>string</code> 要判断的ip</li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</div>
+    </section>
+
+    <!-- After footer scripts -->
+    <script src="/js/jquery-2.2.4.min.js"></script>
+<script src="/js/popper.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/plugins.min.js"></script>
+<script>
+    var Page = function () {
+        var clickEvent = 'click';
+        var ui_a = $('.ul-side').children('li').children('a');
+        var li_h = $('.side-sub').eq(0).children('li').outerHeight(true);
+
+        var ul_a = $('.side-sub a');
+
+        var btn_menu = $('.nav-toggle a');
+        var side_nav = $('.side-nav');
+
+        return {
+            init: function () {
+                btn_menu.on(clickEvent, function () {
+                    if (!this.flag) {
+                        side_nav.addClass('open');
+                    } else {
+                        side_nav.removeClass('open');
+                    }
+                    this.flag = !this.flag;
+                });
+                ui_a.on(clickEvent, function () {
+
+                    var ul = $(this).next();
+                    var li_len = ul.children().length;
+
+
+                    if (!this.flag) {
+                        $(this).attr('class', 'current open');
+                        ul.css('height', li_len * li_h);
+                    } else {
+                        $(this).attr('class', '');
+                        ul.css('height', 0);
+                    }
+                    this.flag = !this.flag;
+
+                });
+
+                ul_a.on(clickEvent, function () {
+                    ul_a.attr('class', '');
+                    $(this).attr('class', 'current');
+
+                });
+                ui_a.eq(0).click();
+            }
+        }
+    }
+
+    Page().init();
+</script>
+</body>
+</html>

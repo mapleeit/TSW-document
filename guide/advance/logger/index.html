@@ -1,0 +1,410 @@
+<html>
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="description" content="Document for TSW(Tencent Server Web)">
+    <meta name="author" content="adarzheng, maplemiao">
+
+    <title>this is a test</title>
+
+    <link rel="shortcut icon" href="favicon/favicon.png">
+    <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/animate.css" rel="stylesheet">
+    <link href="/css/template.css" rel="stylesheet">
+    <link href="/css/subpages.css" rel="stylesheet">
+    <link href="/css/highlight.min.css" rel="stylesheet">
+    <style type="text/css">
+        .guide-content .guide-box h4 {
+            margin: 25px 0 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header header-center header-light header-small header-shadow">
+    <div class="container-fluid">
+        <!-- Brand-->
+        <div class="inner-header">
+            <a class="inner-brand" href="/">
+                <img class="brand-dark" src="/images/logo.png" alt="tsw.js" title="tsw.js">
+                <img class="brand-light" src="/images/logo-light.png" alt="tsw.js" title="tsw.js">
+            </a>
+        </div>
+
+        <!-- Navigation-->
+        <div class="inner-navigation collapse">
+            <div class="inner-nav onepage-nav">
+                <ul>
+                    
+                        <li>
+                            <a href="https://github.com/Tencent/TSW">
+                                <span class="menu-item-span">Github</span>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="/guide/index">
+                                <span class="menu-item-span">教程</span>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="/api/index">
+                                <span class="menu-item-span">手册</span>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="/about/index">
+                                <span class="menu-item-span">关于</span>
+                            </a>
+                        </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- Mobile menu-->
+        <div class="nav-toggle">
+            <a href="#" data-toggle="collapse" data-target=".inner-navigation">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+        </div>
+
+    </div>
+
+</header>
+
+    <section class="tsw-main">
+        <!-- Side bar -->
+        <div class="side-nav">
+    
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+    
+    
+
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/guide/index/" class="">guide/index/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/guide/advance/debug/" class="">guide/advance/debug/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/guide/advance/h5test/" class="">guide/advance/h5test/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/guide/advance/logger/" class="current">guide/advance/logger/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/guide/advance/private/" class="">guide/advance/private/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/guide/introduce/cloud/" class="">guide/introduce/cloud/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/guide/introduce/framework/" class="">guide/introduce/framework/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/guide/introduce/quickstart/" class="">guide/introduce/quickstart/</a>
+                </h3>
+            </li>
+        </ul>
+    
+</div>
+
+        <div class="guide-content">
+    <div class="guide-box">
+        <!-- Content -->
+<h1 id="全息日志"><a href="#全息日志" class="headerlink" title="全息日志"></a>全息日志</h1><blockquote>
+<p>通过日志可以洞见请求的全部</p>
+</blockquote>
+<h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2><ol>
+<li>生命周期 – 即请求周期，接收到<code>request</code>请求开始，到<code>response</code>回包完成</li>
+<li>用户标识 – 当前请求用户标识，可以没有，以下简称<code>UID</code></li>
+<li>上下文 – 与生命周期绑定的全局变量</li>
+<li>全息日志 – 生命周期内产生的日志</li>
+<li>抓包 – 生命周期内产生的IO日志</li>
+<li>染色用户 – 对于添加到白名单中的<code>UID</code>，称为染色用户</li>
+</ol>
+<h2 id="常用API"><a href="#常用API" class="headerlink" title="常用API"></a>常用API</h2><blockquote>
+<p>更多API参考<a href="/doc/api/logger">logger.js</a></p>
+</blockquote>
+<ol>
+<li><p>获取日志对象</p>
+ <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> logger = plug(<span class="string">'logger'</span>);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>获取当前请求用户标识</p>
+ <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> uid = logger.getKey();</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>设置当前请求用户标识</p>
+ <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">logger.setKey(uid);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>获取当前请求已产生的全息日志</p>
+ <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> text = logger.getText();</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="染色"><a href="#染色" class="headerlink" title="染色"></a>染色</h2><ol>
+<li>染色用户的日志可实时查看</li>
+<li><p>四种方式可对<code>UID</code>染色</p>
+<ol>
+<li><p>在<code>config.alphaFile</code>本地文件中声明</p>
+ <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//染色文件格式：一行一个UID，字符集[0-9a-zA-Z_\-]&#123;0,64&#125;</span></span><br><span class="line"><span class="number">123456</span></span><br><span class="line"><span class="number">1234567</span> <span class="comment">//备注</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在<code>config.alphaFileUrl</code>远程文件中声明</p>
+</li>
+<li>临时染色 – 当天有效，0点自动清除</li>
+<li>添加测试环境 – 当天有效，0点自动清除</li>
+</ol>
+</li>
+</ol>
+<h2 id="查看实时日志"><a href="#查看实时日志" class="headerlink" title="查看实时日志"></a>查看实时日志</h2><ol>
+<li>实时日志保留最新<code>64</code>条，滚动记录，<code>24h</code>过期</li>
+<li>访问<code>https://${appid}.tswjs.org/log/view/${UID}</code>即可<ol>
+<li><code>appid</code> – 应用对应的<code>appid</code></li>
+<li><code>uid</code> – 对应染色的<code>uid</code></li>
+</ol>
+</li>
+</ol>
+<h2 id="实现原理"><a href="#实现原理" class="headerlink" title="实现原理"></a>实现原理</h2><ol>
+<li>利用<code>上下文全局可见</code>的特性</li>
+<li>日志产生时，将处在低维的日志发送给上下文</li>
+<li>生命周期结束时，从上下文中获取其持有的日志，决策上报或是丢弃</li>
+<li>在管理端将上报的全息日志显示出来</li>
+<li>抓包可以看成是IO产生的非文本日志，提供下载</li>
+</ol>
+<h2 id="故障排除"><a href="#故障排除" class="headerlink" title="故障排除"></a>故障排除</h2><ul>
+<li>对用户染色后，实时日志为空，排查清单<ol>
+<li>确认是染色用户，即<code>UID</code>在以下白名单内即可，（之一即可）<ul>
+<li><code>config.alphaFile</code></li>
+<li><code>config.alphaFileUrl</code></li>
+<li>临时染色名单</li>
+<li>测试环境名单</li>
+</ul>
+</li>
+<li>确认代码运行过程中有声明过用户<code>UID</code>，且<code>UID</code>与染色相对应<ul>
+<li>可调用<code>logger.setKey(uid)</code>声明当前请求的<code>UID</code></li>
+</ul>
+</li>
+<li>确认运行时<code>debug</code>日志有输出<code>logType: alpha</code>关键字</li>
+<li>排查<code>openapi.tswjs.org</code>域名是否连通，特别是<code>443</code>端口</li>
+<li>确认<code>appid+appkey</code>无误，并重启使其生效</li>
+<li>如果以上还不能解决，直接联系TSW协助排查</li>
+</ol>
+</li>
+</ul>
+
+    </div>
+</div>
+    </section>
+
+    <!-- After footer scripts -->
+    <script src="/js/jquery-2.2.4.min.js"></script>
+<script src="/js/popper.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/plugins.min.js"></script>
+<script>
+    var Page = function () {
+        var clickEvent = 'click';
+        var ui_a = $('.ul-side').children('li').children('a');
+        var li_h = $('.side-sub').eq(0).children('li').outerHeight(true);
+
+        var ul_a = $('.side-sub a');
+
+        var btn_menu = $('.nav-toggle a');
+        var side_nav = $('.side-nav');
+
+        return {
+            init: function () {
+                btn_menu.on(clickEvent, function () {
+                    if (!this.flag) {
+                        side_nav.addClass('open');
+                    } else {
+                        side_nav.removeClass('open');
+                    }
+                    this.flag = !this.flag;
+                });
+                ui_a.on(clickEvent, function () {
+
+                    var ul = $(this).next();
+                    var li_len = ul.children().length;
+
+
+                    if (!this.flag) {
+                        $(this).attr('class', 'current open');
+                        ul.css('height', li_len * li_h);
+                    } else {
+                        $(this).attr('class', '');
+                        ul.css('height', 0);
+                    }
+                    this.flag = !this.flag;
+
+                });
+
+                ul_a.on(clickEvent, function () {
+                    ul_a.attr('class', '');
+                    $(this).attr('class', 'current');
+
+                });
+                ui_a.eq(0).click();
+            }
+        }
+    }
+
+    Page().init();
+</script>
+</body>
+</html>

@@ -1,0 +1,458 @@
+<html>
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="description" content="Document for TSW(Tencent Server Web)">
+    <meta name="author" content="adarzheng, maplemiao">
+
+    <title>this is a test</title>
+
+    <link rel="shortcut icon" href="favicon/favicon.png">
+    <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/animate.css" rel="stylesheet">
+    <link href="/css/template.css" rel="stylesheet">
+    <link href="/css/subpages.css" rel="stylesheet">
+    <link href="/css/highlight.min.css" rel="stylesheet">
+    <style type="text/css">
+        .guide-content .guide-box h4 {
+            margin: 25px 0 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header header-center header-light header-small header-shadow">
+    <div class="container-fluid">
+        <!-- Brand-->
+        <div class="inner-header">
+            <a class="inner-brand" href="/">
+                <img class="brand-dark" src="/images/logo.png" alt="tsw.js" title="tsw.js">
+                <img class="brand-light" src="/images/logo-light.png" alt="tsw.js" title="tsw.js">
+            </a>
+        </div>
+
+        <!-- Navigation-->
+        <div class="inner-navigation collapse">
+            <div class="inner-nav onepage-nav">
+                <ul>
+                    
+                        <li>
+                            <a href="https://github.com/Tencent/TSW">
+                                <span class="menu-item-span">Github</span>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="/guide/index">
+                                <span class="menu-item-span">教程</span>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="/api/index">
+                                <span class="menu-item-span">手册</span>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="/about/index">
+                                <span class="menu-item-span">关于</span>
+                            </a>
+                        </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- Mobile menu-->
+        <div class="nav-toggle">
+            <a href="#" data-toggle="collapse" data-target=".inner-navigation">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+        </div>
+
+    </div>
+
+</header>
+
+    <section class="tsw-main">
+        <!-- Side bar -->
+        <div class="side-nav">
+    
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+    
+    
+
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/api/ajax/" class="current">api/ajax/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/api/config/" class="">api/config/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/api/global/" class="">api/global/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/api/logger/" class="">api/logger/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/api/index/" class="">api/index/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/api/router/" class="">api/router/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/api/status/" class="">api/status/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/api/util/" class="">api/util/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/api/websocket/" class="">api/websocket/</a>
+                </h3>
+            </li>
+        </ul>
+    
+</div>
+
+        <div class="guide-content">
+    <div class="guide-box">
+        <!-- Content -->
+<p>#AJAX</p>
+<blockquote>
+<p>AJAX，用法同jQuery.ajax()</p>
+</blockquote>
+<h2 id="使用Deferred"><a href="#使用Deferred" class="headerlink" title="使用Deferred"></a>使用Deferred</h2><blockquote>
+<p>Example</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> ajax = plug(<span class="string">'ajax'</span>);</span><br><span class="line"></span><br><span class="line">ajax.proxy(request,response).request(&#123;</span><br><span class="line">      url:url,</span><br><span class="line">      dataType: <span class="string">'json'</span>,</span><br><span class="line">      data: data</span><br><span class="line">&#125;).done(<span class="function"><span class="keyword">function</span>(<span class="params">d</span>)</span>&#123;</span><br><span class="line">   <span class="keyword">const</span> json = d.result;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h2 id="使用async-await"><a href="#使用async-await" class="headerlink" title="使用async/await"></a>使用async/await</h2><blockquote>
+<p>Example</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> ajax = plug(<span class="string">'ajax'</span>);</span><br><span class="line"></span><br><span class="line">(<span class="keyword">async</span> <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">const</span> json = <span class="keyword">await</span> ajax.proxy(request,response).request(&#123;</span><br><span class="line">          url:url,</span><br><span class="line">          dataType: <span class="string">'json'</span>,</span><br><span class="line">          data: data</span><br><span class="line">    &#125;).toES6promise().then(<span class="function">(<span class="params">d</span>)=&gt;</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> d.result;</span><br><span class="line">    &#125;).catch(<span class="function"><span class="params">()</span>=&gt;</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure>
+<h2 id="创建代理服务器"><a href="#创建代理服务器" class="headerlink" title="创建代理服务器"></a>创建代理服务器</h2><blockquote>
+<p>Example</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> ajax = plug(<span class="string">'ajax'</span>);</span><br><span class="line"></span><br><span class="line">ajax.proxy(request,response).request(&#123;</span><br><span class="line">      url:url,</span><br><span class="line">      dataType: <span class="string">'proxy'</span></span><br><span class="line">&#125;).fail(<span class="function"><span class="keyword">function</span>(<span class="params">d</span>)</span>&#123;</span><br><span class="line">   response.end();</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h2 id="更多用法"><a href="#更多用法" class="headerlink" title="更多用法"></a>更多用法</h2><ul>
+<li><code>Ajax.proxy(req,res)</code> – 返回一个新的<code>Ajax</code>实例</li>
+<li><code>Ajax.request(opt)</code> – 发起一次http请求<ul>
+<li><code>Ajax.proxy(req,res).request(opt)</code> – 代理模式，自动继承<code>req.headers</code></li>
+<li><code>Ajax.request(opt)</code> – 非代理模式，空<code>headers</code></li>
+<li><code>return</code> – <code>Deferred</code>实例，可以通过<code>.toES6promise()</code>转为<code>ES6 Promise</code>对象</li>
+</ul>
+</li>
+</ul>
+<h2 id="请求参数"><a href="#请求参数" class="headerlink" title="请求参数"></a>请求参数</h2><ul>
+<li><code>opt</code><ul>
+<li><code>devIp</code> – <code>string</code> 开发者模式下，覆盖ip</li>
+<li><code>devPort</code> – <code>number</code> 开发者模式下，覆盖port</li>
+<li><code>ip</code> – <code>string</code> 目标ip</li>
+<li><code>port</code> – <code>number</code> 目标port，默认80</li>
+<li><code>host</code> – <code>string</code> 目标域名</li>
+<li><code>useIPAsHost</code> – <code>boolean</code> 使用IP覆盖<code>headers.host</code>，默认<code>false</code></li>
+<li><code>type</code> – <code>&quot;GET&quot;|&quot;POST&quot;</code>，忽略大小写</li>
+<li><code>url</code> – <code>string</code> 目标url，优先覆盖host、port、path</li>
+<li><code>path</code> – <code>string</code> 目标path</li>
+<li><code>headers</code> – <code>object</code> 要发送的headers</li>
+<li><code>timeout</code> – <code>number</code> 超时时间，默认值3000ms</li>
+<li><code>retry</code> – <code>number</code> 重试次数，默认值1</li>
+<li><code>data</code> – <code>object</code> 要发送的数据，GET请求追加到url后在，POST请求转为body</li>
+<li><code>body</code> – <code>string|Buffer</code> http body</li>
+<li><code>encodeMethod</code> – <code>string</code> 格式化参数时的编码函数，默认<code>encodeURIComponent</code></li>
+<li><code>success</code> – <code>function</code> 成功回调</li>
+<li><code>error</code> – <code>function</code> 失败回调</li>
+<li><code>response</code> – <code>function(response)</code> <code>response</code>事件回调<ul>
+<li><code>response</code> – 请求对应的<code>response</code>对象</li>
+<li><code>返回值</code> – 返回<code>false</code>可中断<code>ajax</code>处理流程</li>
+</ul>
+</li>
+<li><code>formatCode</code> – <code>function(obj,opt){return {isFail: 0,code:0}}</code> 格式化返回码<ul>
+<li><code>obj</code> – 原始data，类型与dataType对应</li>
+<li><code>isFail</code> – 0:成功，1:失败，2:逻辑失败</li>
+<li><code>code</code> – 翻译后的返回码</li>
+</ul>
+</li>
+<li><code>dataType</code> – <code>string|number</code> 指定返回值类型，默认值html<ul>
+<li><code>html</code> – 以string形式处理回包，gzip自动解压</li>
+<li><code>text</code> – 以string形式处理回包，gzip自动解压</li>
+<li><code>buffer</code> – 以Buffer形式处理回包，gzip不会自动解压</li>
+<li><code>json</code> – 以string形式处理回包，并转成json，gzip自动解压</li>
+<li><code>jsonp</code> – 以string形式处理回包，并转成json，gzip自动解压</li>
+<li><code>302</code> – <code>response.statusCode</code> 为302时触发成功，忽略回包</li>
+<li><code>404</code> – <code>response.statusCode</code> 为404时触发成功，忽略回包</li>
+<li><code>proxy</code> – 用于透明代理，自动处理返回结果到<code>response</code>里，只需处理<code>error</code>回调即可</li>
+</ul>
+</li>
+<li><code>jsonpCallback</code> – <code>string</code> 用于指定jsonp回调的名字</li>
+<li><code>useJsonParseOnly</code> – <code>boolean</code> 强制使用<code>JSON.parse</code>解析回包，默认值false，请求不受信任数据来源时建议开启<ul>
+<li><code>false</code> – 不强制，此时可以请求jsonp和不严格的json</li>
+<li><code>true</code>  – 强制，这样更安全，同时要求JSON严格按标准套路来</li>
+</ul>
+</li>
+<li><code>send</code> – <code>function(request)</code> 自定义发送内容，覆盖body<ul>
+<li>用于自定义的流式内容发送</li>
+<li>需手动调用request.end()结束发送</li>
+</ul>
+</li>
+<li><code>enctype</code> – <code>string</code> POST时指定body的编码方式<ul>
+<li><code>application/x-www-form-urlencoded</code> – 默认值</li>
+<li><code>application/json</code></li>
+<li><code>multipart/form-data</code></li>
+</ul>
+</li>
+<li><code>keepAlive</code> – <code>boolean</code> 是否启用长连接，默认false</li>
+</ul>
+</li>
+</ul>
+<h2 id="返回值"><a href="#返回值" class="headerlink" title="返回值"></a>返回值</h2><ul>
+<li><code>data</code><ul>
+<li><code>opt</code> – <code>object</code> 即原始<code>opt</code></li>
+<li><code>buffer</code> – <code>buffer</code> 原始响应内容</li>
+<li><code>result</code> – <code>buffer|string|json</code> 根据<code>dataType</code>转换后的结果</li>
+<li><code>responseText</code> – <code>string</code> 原始响应内容</li>
+<li><code>hasError</code> – <code>boolean</code> 请求过程中是否发生网络错误或超时</li>
+<li><code>code</code> – <code>number</code> 错误码，出错时填写</li>
+<li><code>msg</code> – <code>string</code> 出错信息</li>
+<li><code>response</code> – <code>object</code> 原始<code>response</code>对象</li>
+<li><code>times</code> – <code>object</code> 各种测速打点<ul>
+<li><code>start</code> – <code>Date</code> 开始请求</li>
+<li><code>response</code> – <code>Date</code> <code>response</code>事件触发</li>
+<li><code>end</code> – <code>Date</code> <code>end</code>事件触发</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="错误码"><a href="#错误码" class="headerlink" title="错误码"></a>错误码</h2><ul>
+<li><code>data.code</code><ul>
+<li><code>508</code> – <code>Parse json error</code></li>
+<li><code>502</code> – 建立<code>tcp</code>出错，对端原因</li>
+<li><code>600</code> – <code>window.response</code>提前关闭</li>
+<li><code>60X</code> – <code>600+</code>剩余重试次数</li>
+<li><code>513</code> – 超时</li>
+<li><code>51X</code> – <code>513+</code>剩余重试次数</li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</div>
+    </section>
+
+    <!-- After footer scripts -->
+    <script src="/js/jquery-2.2.4.min.js"></script>
+<script src="/js/popper.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/plugins.min.js"></script>
+<script>
+    var Page = function () {
+        var clickEvent = 'click';
+        var ui_a = $('.ul-side').children('li').children('a');
+        var li_h = $('.side-sub').eq(0).children('li').outerHeight(true);
+
+        var ul_a = $('.side-sub a');
+
+        var btn_menu = $('.nav-toggle a');
+        var side_nav = $('.side-nav');
+
+        return {
+            init: function () {
+                btn_menu.on(clickEvent, function () {
+                    if (!this.flag) {
+                        side_nav.addClass('open');
+                    } else {
+                        side_nav.removeClass('open');
+                    }
+                    this.flag = !this.flag;
+                });
+                ui_a.on(clickEvent, function () {
+
+                    var ul = $(this).next();
+                    var li_len = ul.children().length;
+
+
+                    if (!this.flag) {
+                        $(this).attr('class', 'current open');
+                        ul.css('height', li_len * li_h);
+                    } else {
+                        $(this).attr('class', '');
+                        ul.css('height', 0);
+                    }
+                    this.flag = !this.flag;
+
+                });
+
+                ul_a.on(clickEvent, function () {
+                    ul_a.attr('class', '');
+                    $(this).attr('class', 'current');
+
+                });
+                ui_a.eq(0).click();
+            }
+        }
+    }
+
+    Page().init();
+</script>
+</body>
+</html>

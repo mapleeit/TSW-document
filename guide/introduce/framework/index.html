@@ -1,0 +1,386 @@
+<html>
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="description" content="Document for TSW(Tencent Server Web)">
+    <meta name="author" content="adarzheng, maplemiao">
+
+    <title>this is a test</title>
+
+    <link rel="shortcut icon" href="favicon/favicon.png">
+    <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/animate.css" rel="stylesheet">
+    <link href="/css/template.css" rel="stylesheet">
+    <link href="/css/subpages.css" rel="stylesheet">
+    <link href="/css/highlight.min.css" rel="stylesheet">
+    <style type="text/css">
+        .guide-content .guide-box h4 {
+            margin: 25px 0 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header header-center header-light header-small header-shadow">
+    <div class="container-fluid">
+        <!-- Brand-->
+        <div class="inner-header">
+            <a class="inner-brand" href="/">
+                <img class="brand-dark" src="/images/logo.png" alt="tsw.js" title="tsw.js">
+                <img class="brand-light" src="/images/logo-light.png" alt="tsw.js" title="tsw.js">
+            </a>
+        </div>
+
+        <!-- Navigation-->
+        <div class="inner-navigation collapse">
+            <div class="inner-nav onepage-nav">
+                <ul>
+                    
+                        <li>
+                            <a href="https://github.com/Tencent/TSW">
+                                <span class="menu-item-span">Github</span>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="/guide/index">
+                                <span class="menu-item-span">教程</span>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="/api/index">
+                                <span class="menu-item-span">手册</span>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="/about/index">
+                                <span class="menu-item-span">关于</span>
+                            </a>
+                        </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- Mobile menu-->
+        <div class="nav-toggle">
+            <a href="#" data-toggle="collapse" data-target=".inner-navigation">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+        </div>
+
+    </div>
+
+</header>
+
+    <section class="tsw-main">
+        <!-- Side bar -->
+        <div class="side-nav">
+    
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+    
+    
+
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/guide/index/" class="">guide/index/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/guide/advance/debug/" class="">guide/advance/debug/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/guide/advance/h5test/" class="">guide/advance/h5test/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/guide/advance/logger/" class="">guide/advance/logger/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/guide/advance/private/" class="">guide/advance/private/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/guide/introduce/cloud/" class="">guide/introduce/cloud/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/guide/introduce/framework/" class="current">guide/introduce/framework/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/guide/introduce/quickstart/" class="">guide/introduce/quickstart/</a>
+                </h3>
+            </li>
+        </ul>
+    
+</div>
+
+        <div class="guide-content">
+    <div class="guide-box">
+        <!-- Content -->
+<h1 id="开源框架的集成"><a href="#开源框架的集成" class="headerlink" title="开源框架的集成"></a>开源框架的集成</h1><h2 id="示例代码"><a href="#示例代码" class="headerlink" title="示例代码"></a>示例代码</h2><p>参考配置文件 <code>TSW/examples/framework/config.js</code></p>
+<h2 id="express"><a href="#express" class="headerlink" title="express"></a>express</h2><blockquote>
+<p>如果你已经基于<code>express</code>开发代码了，那么将<code>express</code>集成进<code>TSW</code>是不错的选择</p>
+</blockquote>
+<ol>
+<li>注释掉<code>app.listen()</code>的调用</li>
+<li>编写模块，导出<code>app</code></li>
+<li>将编写好的模块挂载到TSW路由上</li>
+</ol>
+<blockquote>
+<p>Example</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">"use strict"</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> express = <span class="built_in">require</span>(<span class="string">'express'</span>);</span><br><span class="line"><span class="keyword">const</span> app = express();</span><br><span class="line"></span><br><span class="line"><span class="comment">//http://127.0.0.1/express</span></span><br><span class="line">app.all(<span class="string">'/express'</span>,<span class="function"><span class="keyword">function</span>(<span class="params">req, res</span>)</span>&#123;</span><br><span class="line">	res.end(<span class="string">'hello express~'</span>);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">//app.listen(80);</span></span><br><span class="line"><span class="comment">//划重点</span></span><br><span class="line"><span class="built_in">module</span>.exports = app;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><code>TSW</code>内置自动解析常用的<code>POST</code>请求，<code>express</code>中要去掉对应的中间件，<code>TSW</code>支持的列表如下</p>
+</blockquote>
+<ol>
+<li>text/plain</li>
+<li>application/x-www-form-urlencoded</li>
+<li>application/json</li>
+</ol>
+<h2 id="koa"><a href="#koa" class="headerlink" title="koa"></a>koa</h2><blockquote>
+<p>如果你已经基于<code>koa</code>开发代码了，那么将<code>koa</code>集成进<code>TSW</code>是不错的选择</p>
+</blockquote>
+<ol>
+<li>注释掉<code>app.listen()</code>的调用</li>
+<li>编写模块，导出<code>app</code></li>
+<li>将编写好的模块挂载到TSW路由上</li>
+</ol>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">"use strict"</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> koa = <span class="built_in">require</span>(<span class="string">'koa'</span>);</span><br><span class="line"><span class="keyword">const</span> app = <span class="keyword">new</span> koa();</span><br><span class="line"></span><br><span class="line"><span class="comment">//http://127.0.0.1/koa</span></span><br><span class="line">app.use(<span class="function"><span class="params">ctx</span> =&gt;</span> &#123;</span><br><span class="line">	ctx.body = <span class="string">'Hello Koa'</span>;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">//app.listen(80);</span></span><br><span class="line"><span class="comment">//划重点</span></span><br><span class="line"><span class="built_in">module</span>.exports = app;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><code>TSW</code>内置自动解析常用的<code>POST</code>请求，<code>koa</code>中要去掉对应的中间件，<code>TSW</code>支持的列表如下</p>
+</blockquote>
+<ol>
+<li>text/plain</li>
+<li>application/x-www-form-urlencoded</li>
+<li>application/json</li>
+</ol>
+<h2 id="hapi"><a href="#hapi" class="headerlink" title="hapi"></a>hapi</h2><blockquote>
+<p>如果你已经基于hapi开发代码了，那么将hapi集成进TSW是不错的选择</p>
+</blockquote>
+<ol>
+<li>空参数启动<code>hapi</code>的<code>server</code></li>
+<li>编写处理请求的模块，通过<code>server.connections[0].listener.emit(&#39;request&#39;,req,res)</code>调用<code>hapi</code></li>
+<li>将编写好的模块挂载到TSW路由上</li>
+</ol>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">"use strict"</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> Hapi = <span class="built_in">require</span>(<span class="string">'hapi'</span>);</span><br><span class="line"><span class="keyword">const</span> server = <span class="keyword">new</span> Hapi.Server();</span><br><span class="line"><span class="keyword">const</span> logger = plug(<span class="string">'logger'</span>);</span><br><span class="line"></span><br><span class="line">server.connection();</span><br><span class="line">server.start();</span><br><span class="line"></span><br><span class="line"><span class="comment">//http://127.0.0.1/hapi</span></span><br><span class="line">server.route(&#123;</span><br><span class="line">	method: <span class="string">'GET'</span>,</span><br><span class="line">	path:<span class="string">'/hapi'</span>,</span><br><span class="line">	handler: <span class="function"><span class="keyword">function</span> (<span class="params">request, reply</span>) </span>&#123;</span><br><span class="line">		logger.debug(<span class="string">'hello hapi'</span>);</span><br><span class="line">		<span class="keyword">return</span> reply(<span class="string">'hello hapi~'</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 业务处理模块，通过config.js路由过来</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="built_in">module</span>.exports = <span class="function"><span class="keyword">function</span>(<span class="params">req,res</span>)</span>&#123;</span><br><span class="line">	logger.debug(<span class="string">'hello hapi'</span>);</span><br><span class="line">	<span class="comment">//全转给hapi去处理</span></span><br><span class="line">	server.connections[<span class="number">0</span>].listener.emit(<span class="string">'request'</span>,req,res);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<h2 id="VueSSR"><a href="#VueSSR" class="headerlink" title="VueSSR"></a>VueSSR</h2><blockquote>
+<p>如果你需要使用<code>Vue</code>的服务器端渲染，也可以很轻易地集成进去</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (<span class="keyword">typeof</span> <span class="built_in">window</span> !== <span class="string">'undefined'</span>) &#123;</span><br><span class="line">	<span class="built_in">window</span>.disable()</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> &#123; createBundleRenderer &#125; = <span class="built_in">require</span>(<span class="string">'vue-server-renderer'</span>)</span><br><span class="line"><span class="keyword">const</span> bundle = <span class="built_in">require</span>(<span class="string">'this/is/your/vue-ssr-server-bundle.json'</span>)</span><br><span class="line"><span class="keyword">const</span> clientManifest = <span class="built_in">require</span>(<span class="string">'this/is/your/vue-ssr-client-manifest.json'</span>)</span><br><span class="line"></span><br><span class="line"><span class="built_in">module</span>.exports = <span class="function">(<span class="params">req, res</span>) =&gt;</span> &#123;</span><br><span class="line">	<span class="keyword">let</span> renderer = createBundleRenderer(bundle, &#123;</span><br><span class="line">		template: <span class="string">`</span></span><br><span class="line"><span class="string">			&lt;html&gt;</span></span><br><span class="line"><span class="string">				&lt;head&gt;</span></span><br><span class="line"><span class="string">					&lt;meta charset="utf-8"&gt;</span></span><br><span class="line"><span class="string">					&lt;title&gt;&#123;&#123;title&#125;&#125;&lt;/title&gt;</span></span><br><span class="line"><span class="string">				&lt;/head&gt;</span></span><br><span class="line"><span class="string">				&lt;body&gt;</span></span><br><span class="line"><span class="string">					&lt;div id="app"&gt;</span></span><br><span class="line"><span class="string">						&lt;!--vue-ssr-outlet--&gt;</span></span><br><span class="line"><span class="string">					&lt;/div&gt;</span></span><br><span class="line"><span class="string">				&lt;/body&gt;</span></span><br><span class="line"><span class="string">			&lt;/html&gt;</span></span><br><span class="line"><span class="string">		`</span>,</span><br><span class="line">        clientManifest</span><br><span class="line">	&#125;)</span><br><span class="line">	</span><br><span class="line">	renderer.renderToString(&#123;</span><br><span class="line">		title: <span class="string">'Vue SSR - demo'</span></span><br><span class="line">	&#125;, (error, html) =&gt; &#123;</span><br><span class="line">		<span class="keyword">if</span> (error) &#123;</span><br><span class="line">			res.end(<span class="string">`Error: <span class="subst">$&#123;<span class="built_in">JSON</span>.stringify(error)&#125;</span>`</span>)</span><br><span class="line">			<span class="keyword">return</span> <span class="number">1</span></span><br><span class="line">		&#125;</span><br><span class="line">		res.end(html)</span><br><span class="line">		<span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">	&#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这里有一个地方需要特别注意：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (<span class="keyword">typeof</span> <span class="built_in">window</span> !== <span class="string">'undefined'</span>) &#123;</span><br><span class="line">	<span class="built_in">window</span>.disable()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p><strong>使用<code>VueSSR</code>的时候，需要将全局变量<a href="//tswjs.org/doc/api/global"><code>window</code></a>禁用掉</strong>。原因是<code>Vue</code>使用了<code>window</code>来作为判断是否是浏览器环境中的标准，导致判断环境错误，执行出错。</p>
+
+    </div>
+</div>
+    </section>
+
+    <!-- After footer scripts -->
+    <script src="/js/jquery-2.2.4.min.js"></script>
+<script src="/js/popper.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/plugins.min.js"></script>
+<script>
+    var Page = function () {
+        var clickEvent = 'click';
+        var ui_a = $('.ul-side').children('li').children('a');
+        var li_h = $('.side-sub').eq(0).children('li').outerHeight(true);
+
+        var ul_a = $('.side-sub a');
+
+        var btn_menu = $('.nav-toggle a');
+        var side_nav = $('.side-nav');
+
+        return {
+            init: function () {
+                btn_menu.on(clickEvent, function () {
+                    if (!this.flag) {
+                        side_nav.addClass('open');
+                    } else {
+                        side_nav.removeClass('open');
+                    }
+                    this.flag = !this.flag;
+                });
+                ui_a.on(clickEvent, function () {
+
+                    var ul = $(this).next();
+                    var li_len = ul.children().length;
+
+
+                    if (!this.flag) {
+                        $(this).attr('class', 'current open');
+                        ul.css('height', li_len * li_h);
+                    } else {
+                        $(this).attr('class', '');
+                        ul.css('height', 0);
+                    }
+                    this.flag = !this.flag;
+
+                });
+
+                ul_a.on(clickEvent, function () {
+                    ul_a.attr('class', '');
+                    $(this).attr('class', 'current');
+
+                });
+                ui_a.eq(0).click();
+            }
+        }
+    }
+
+    Page().init();
+</script>
+</body>
+</html>

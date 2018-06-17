@@ -1,0 +1,378 @@
+<html>
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="description" content="Document for TSW(Tencent Server Web)">
+    <meta name="author" content="adarzheng, maplemiao">
+
+    <title>this is a test</title>
+
+    <link rel="shortcut icon" href="favicon/favicon.png">
+    <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/animate.css" rel="stylesheet">
+    <link href="/css/template.css" rel="stylesheet">
+    <link href="/css/subpages.css" rel="stylesheet">
+    <link href="/css/highlight.min.css" rel="stylesheet">
+    <style type="text/css">
+        .guide-content .guide-box h4 {
+            margin: 25px 0 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header header-center header-light header-small header-shadow">
+    <div class="container-fluid">
+        <!-- Brand-->
+        <div class="inner-header">
+            <a class="inner-brand" href="/">
+                <img class="brand-dark" src="/images/logo.png" alt="tsw.js" title="tsw.js">
+                <img class="brand-light" src="/images/logo-light.png" alt="tsw.js" title="tsw.js">
+            </a>
+        </div>
+
+        <!-- Navigation-->
+        <div class="inner-navigation collapse">
+            <div class="inner-nav onepage-nav">
+                <ul>
+                    
+                        <li>
+                            <a href="https://github.com/Tencent/TSW">
+                                <span class="menu-item-span">Github</span>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="/guide/index">
+                                <span class="menu-item-span">教程</span>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="/api/index">
+                                <span class="menu-item-span">手册</span>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="/about/index">
+                                <span class="menu-item-span">关于</span>
+                            </a>
+                        </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- Mobile menu-->
+        <div class="nav-toggle">
+            <a href="#" data-toggle="collapse" data-target=".inner-navigation">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+        </div>
+
+    </div>
+
+</header>
+
+    <section class="tsw-main">
+        <!-- Side bar -->
+        <div class="side-nav">
+    
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+    
+    
+
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/api/ajax/" class="">api/ajax/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/api/config/" class="">api/config/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/api/global/" class="">api/global/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/api/logger/" class="">api/logger/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/api/index/" class="">api/index/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/api/router/" class="">api/router/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/api/status/" class="">api/status/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/api/util/" class="">api/util/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/api/websocket/" class="current">api/websocket/</a>
+                </h3>
+            </li>
+        </ul>
+    
+</div>
+
+        <div class="guide-content">
+    <div class="guide-box">
+        <!-- Content -->
+<p>#WebSocket</p>
+<blockquote>
+<p>TSW已内置<code>WebSocket</code></p>
+</blockquote>
+<h2 id="WebSocket路由"><a href="#WebSocket路由" class="headerlink" title="WebSocket路由"></a>WebSocket路由</h2><blockquote>
+<p>只需在<a href="./config">config配置文件</a>里实现<code>config.wsRouter</code></p>
+</blockquote>
+<h2 id="编写处理模块"><a href="#编写处理模块" class="headerlink" title="编写处理模块"></a>编写处理模块</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//需实现的function</span></span><br><span class="line"></span><br><span class="line">exports.onConnection = <span class="function"><span class="keyword">function</span>(<span class="params">ws</span>)</span>&#123;<span class="comment">//WebSocket连接建立的回调函数</span></span><br><span class="line">    <span class="comment">//ws.send('xxx');</span></span><br><span class="line">    <span class="comment">//ws.close();</span></span><br><span class="line">&#125;;</span><br><span class="line">exports.onMessage = <span class="function"><span class="keyword">function</span>(<span class="params">ws, message</span>) </span>&#123;<span class="comment">//收到消息的回调函数</span></span><br><span class="line"></span><br><span class="line">&#125;;</span><br><span class="line">exports.onClose = <span class="function"><span class="keyword">function</span>(<span class="params">ws, code, reason</span>) </span>&#123;<span class="comment">//WebSocket连接关闭时的处理函数</span></span><br><span class="line">	</span><br><span class="line">&#125;;</span><br><span class="line">exports.onError = <span class="function"><span class="keyword">function</span>(<span class="params">ws, err</span>) </span>&#123;<span class="comment">//WebSocket连接出错时的处理函数</span></span><br><span class="line">	</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>##ws对象属性详解</p>
+<ul>
+<li><code>ws.upgradeReq</code> – node http连接中的<code>request</code>对象<ul>
+<li><code>upgradeReq</code> – <code>object</code> <code>ws</code>扩展属性<ul>
+<li><code>upgradeReq.GET</code> – <code>object</code> <code>WebSocket</code>请求<code>get</code>参数</li>
+<li><code>upgradeReq.headers</code> – <code>object</code> <code>WebSocket</code>请求<code>cookie</code>对象</li>
+<li><code>upgradeReq.REQUEST</code> – <code>object</code> <code>WebSocket</code>请求<code>url</code>解析后的对象</li>
+<li><code>upgradeReq.REQUEST.pathname</code> – <code>string</code> <code>WebSocket</code>请求的<code>pathname</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>ws.readyState</code> – <code>number</code> <code>WebSocket</code>连接的状态，值为数字，只有<code>readyState</code>等于<code>1</code>时才能send消息<ul>
+<li><code>0</code> – <code>number</code> <code>WebSocket</code>连接还没有open</li>
+<li><code>1</code> – <code>number</code> <code>WebSocket</code>连接已经open，并且可以收发消息了</li>
+<li><code>2</code> – <code>number</code> <code>WebSocket</code>连接关闭中</li>
+<li><code>3</code> – <code>number</code> <code>WebSocket</code>连接已关闭</li>
+</ul>
+</li>
+<li><code>ws.send(&#39;xxx&#39;)</code> – 发送消息，支持二进制数据</li>
+<li><code>ws.close()</code> – 关闭<code>WebSocket</code>连接</li>
+</ul>
+<h2 id="加密WebSocket"><a href="#加密WebSocket" class="headerlink" title="加密WebSocket"></a>加密WebSocket</h2><p>http有加密通信https，同样，ws也有加密通信wss，无需单独部署，直接复用https证书</p>
+<h2 id="WebSocket跨机器跨进程消息转发"><a href="#WebSocket跨机器跨进程消息转发" class="headerlink" title="WebSocket跨机器跨进程消息转发"></a>WebSocket跨机器跨进程消息转发</h2><p>每个<code>woker</code>都监听了一个私有port，从<code>global.TSW_HTTP_WORKER_PORT</code>得到，利用私有port转发消息</p>
+<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><blockquote>
+<p>如果TSW前面有类<code>nginx</code>接入层，需要在转发时保持<code>Upgrade</code>透传</p>
+</blockquote>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">proxy_set_header Upgrade $http_upgrade;</span><br><span class="line">proxy_set_header Connection "Upgrade";</span><br></pre></td></tr></table></figure>
+<p>##浏览器端连接demo<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> ws = <span class="keyword">new</span> WebSocket(<span class="string">'wss://tswjs.org/hello/world?aaa=xxx'</span>);</span><br><span class="line">ws.onopen = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;<span class="comment">//连接建立</span></span><br><span class="line">	ws.send(<span class="string">'xxx'</span>);</span><br><span class="line">	ws.close();</span><br><span class="line">&#125;;</span><br><span class="line">ws.onmessage = <span class="function"><span class="keyword">function</span>(<span class="params">message</span>) </span>&#123;&#125;;</span><br><span class="line">ws.onclose = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;&#125;;</span><br></pre></td></tr></table></figure></p>
+
+    </div>
+</div>
+    </section>
+
+    <!-- After footer scripts -->
+    <script src="/js/jquery-2.2.4.min.js"></script>
+<script src="/js/popper.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/plugins.min.js"></script>
+<script>
+    var Page = function () {
+        var clickEvent = 'click';
+        var ui_a = $('.ul-side').children('li').children('a');
+        var li_h = $('.side-sub').eq(0).children('li').outerHeight(true);
+
+        var ul_a = $('.side-sub a');
+
+        var btn_menu = $('.nav-toggle a');
+        var side_nav = $('.side-nav');
+
+        return {
+            init: function () {
+                btn_menu.on(clickEvent, function () {
+                    if (!this.flag) {
+                        side_nav.addClass('open');
+                    } else {
+                        side_nav.removeClass('open');
+                    }
+                    this.flag = !this.flag;
+                });
+                ui_a.on(clickEvent, function () {
+
+                    var ul = $(this).next();
+                    var li_len = ul.children().length;
+
+
+                    if (!this.flag) {
+                        $(this).attr('class', 'current open');
+                        ul.css('height', li_len * li_h);
+                    } else {
+                        $(this).attr('class', '');
+                        ul.css('height', 0);
+                    }
+                    this.flag = !this.flag;
+
+                });
+
+                ul_a.on(clickEvent, function () {
+                    ul_a.attr('class', '');
+                    $(this).attr('class', 'current');
+
+                });
+                ui_a.eq(0).click();
+            }
+        }
+    }
+
+    Page().init();
+</script>
+</body>
+</html>

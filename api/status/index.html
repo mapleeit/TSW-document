@@ -1,0 +1,418 @@
+<html>
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="description" content="Document for TSW(Tencent Server Web)">
+    <meta name="author" content="adarzheng, maplemiao">
+
+    <title>this is a test</title>
+
+    <link rel="shortcut icon" href="favicon/favicon.png">
+    <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/animate.css" rel="stylesheet">
+    <link href="/css/template.css" rel="stylesheet">
+    <link href="/css/subpages.css" rel="stylesheet">
+    <link href="/css/highlight.min.css" rel="stylesheet">
+    <style type="text/css">
+        .guide-content .guide-box h4 {
+            margin: 25px 0 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header header-center header-light header-small header-shadow">
+    <div class="container-fluid">
+        <!-- Brand-->
+        <div class="inner-header">
+            <a class="inner-brand" href="/">
+                <img class="brand-dark" src="/images/logo.png" alt="tsw.js" title="tsw.js">
+                <img class="brand-light" src="/images/logo-light.png" alt="tsw.js" title="tsw.js">
+            </a>
+        </div>
+
+        <!-- Navigation-->
+        <div class="inner-navigation collapse">
+            <div class="inner-nav onepage-nav">
+                <ul>
+                    
+                        <li>
+                            <a href="https://github.com/Tencent/TSW">
+                                <span class="menu-item-span">Github</span>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="/guide/index">
+                                <span class="menu-item-span">教程</span>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="/api/index">
+                                <span class="menu-item-span">手册</span>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="/about/index">
+                                <span class="menu-item-span">关于</span>
+                            </a>
+                        </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- Mobile menu-->
+        <div class="nav-toggle">
+            <a href="#" data-toggle="collapse" data-target=".inner-navigation">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+        </div>
+
+    </div>
+
+</header>
+
+    <section class="tsw-main">
+        <!-- Side bar -->
+        <div class="side-nav">
+    
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    
+    
+    
+
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/api/ajax/" class="">api/ajax/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/api/config/" class="">api/config/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/api/global/" class="">api/global/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/api/logger/" class="">api/logger/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/api/index/" class="">api/index/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/api/router/" class="">api/router/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/api/status/" class="current">api/status/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/api/util/" class="">api/util/</a>
+                </h3>
+            </li>
+        </ul>
+    
+        <ul class="ul-side">
+            <li>
+                <h3>
+                    <a href="/api/websocket/" class="">api/websocket/</a>
+                </h3>
+            </li>
+        </ul>
+    
+</div>
+
+        <div class="guide-content">
+    <div class="guide-box">
+        <!-- Content -->
+<h1 id="TSW指标"><a href="#TSW指标" class="headerlink" title="TSW指标"></a>TSW指标</h1><blockquote>
+<p><code>SUM</code>开头表示是累计型，聚合时求和</p>
+</blockquote>
+<blockquote>
+<p><code>AVG</code>开头表示是时刻值，聚合时求平均值</p>
+</blockquote>
+<h2 id="CPU"><a href="#CPU" class="headerlink" title="CPU"></a>CPU</h2><ul>
+<li>AVG_TSW_CPU_USED – 当前CPU使用率，<code>0-100</code></li>
+</ul>
+<h2 id="内存"><a href="#内存" class="headerlink" title="内存"></a>内存</h2><ul>
+<li>AVG_TSW_MEMORY_RSS – 当前内存RSS使用量，单位Bit</li>
+<li>AVG_TSW_MEMORY_HEAP – 当前内存HEAP使用量，单位Bit</li>
+<li>AVG_TSW_MEMORY_EXTERNAL – 当前内存EXTERNAL使用量，单位Bit</li>
+</ul>
+<h2 id="HTTP"><a href="#HTTP" class="headerlink" title="HTTP"></a>HTTP</h2><ul>
+<li>SUM_TSW_HTTP_20X – 返回200的次数，包含<code>200</code>和<code>206</code>等</li>
+<li>SUM_TSW_HTTP_302 – 返回重定向的次数，包含<code>301</code>、<code>302</code>、<code>303</code>和<code>307</code></li>
+<li>SUM_TSW_HTTP_304 – 返回304的次数</li>
+<li>SUM_TSW_HTTP_403 – 返回403的次数</li>
+<li>SUM_TSW_HTTP_404 – 返回404的次数</li>
+<li>SUM_TSW_HTTP_404GY – 404公益返回次数</li>
+<li>SUM_TSW_HTTP_418 – 返回418的次数，我是茶壶</li>
+<li>SUM_TSW_HTTP_419 – 返回419的次数，Love For One Night</li>
+<li>SUM_TSW_HTTP_666 – 返回666的次数，同200</li>
+<li>SUM_TSW_HTTP_501 – 返回501的次数</li>
+<li>SUM_TSW_HTTP_508 – 返回508的次数，不是我的域名</li>
+<li>SUM_TSW_HTTP_500 – 返回50X的次数，包含500，503，513等，不包含以上已知的错误</li>
+<li>SUM_TSW_HTTP_OTHER – 返回未知的次数，不在以上统计范围内的算未知</li>
+<li>SUM_TSW_HTTP_TST – 安全扫描器的请求次数</li>
+<li>SUM_TSW_XSS_BLOCK – XSS防御器生效次数</li>
+<li>SUM_TSW_CC_LIMIT – CC防御生效次数</li>
+<li>SUM_TSW_BAD_COOKIE – COOKIE格式不严格，自动纠正的次数</li>
+</ul>
+<h2 id="健康状况"><a href="#健康状况" class="headerlink" title="健康状况"></a>健康状况</h2><ul>
+<li>SUM_TSW_OVERLOAD_REJECT – 过载保护生效次数</li>
+<li>AVG_TSW_ST0_X10 – <code>setTimeout(fn,0)</code>测量得到的延迟，放大10倍方便观察，单位1/10ms</li>
+<li>AVG_TSW_IP_STD_X10 – IP访问次数加权方差，放大10倍方便观察</li>
+<li>SUM_TSW_IP_BLOCK – 命中黑名单IP的次数</li>
+<li>SUM_TSW_IP_EMPTY – 空IP阻挡次数，收包过程中断连或高负载的情况下会出现</li>
+<li>SUM_TSW_ROUTE_EXCEED – 疑似循环转发，拒绝次数</li>
+<li>SUM_TSW_CD_CHECK – CD冷却API调用次数</li>
+</ul>
+<h2 id="日志"><a href="#日志" class="headerlink" title="日志"></a>日志</h2><ul>
+<li>SUM_TSW_LOG_FAIL  – 包含逻辑失败的流水次数</li>
+<li>SUM_TSW_LOG_FORCE – 强制上报的流水次数</li>
+<li>SUM_TSW_LOG_ERROR – 包含错误的流水次数</li>
+<li>SUM_TSW_LOG_ALPHA – 染色流水次数，即云抓包次数</li>
+<li>SUM_TSW_LOG_WEB   – 来自浏览器端的流水上报次数</li>
+<li>SUM_TSW_LOG_TST   – 安全扫描器产生的流水次数</li>
+<li>SUM_TSW_REPORT_LOG – 流水落地的次数</li>
+<li>SUM_TSW_ERROR_LOG_DROP – <code>warn</code>或<code>error</code>级别日志，丢弃的条数</li>
+<li>AVG_TSW_ERROE_LOG_5S – <code>warn</code>或<code>error</code>级别日志发生频率，统计粒度5秒</li>
+</ul>
+<h2 id="文件读写"><a href="#文件读写" class="headerlink" title="文件读写"></a>文件读写</h2><ul>
+<li>SUM_TSW_FILECACHE_WRITE – 文件缓存API写调用次数</li>
+<li>SUM_TSW_FILECACHE_READ – 文件缓存API读调用次数</li>
+<li>SUM_TSW_FILE_SYNC – 文件API同步方式调用次数，不包含异步方式调用</li>
+</ul>
+<h2 id="WEBSOCKET"><a href="#WEBSOCKET" class="headerlink" title="WEBSOCKET"></a>WEBSOCKET</h2><ul>
+<li>SUM_TSW_WEBSOCKET_CONNECT – <code>WebSocket</code>连接建立次数</li>
+<li>SUM_TSW_WEBSOCKET_MESSAGE – <code>WebSocket</code> 消息接收次数</li>
+<li>SUM_TSW_WEBSOCKET_ERROR – <code>WebSocket</code> 错误事件触发次数</li>
+<li>SUM_TSW_WEBSOCKET_CLOSE – <code>WebSocket</code> 关闭事件触发次数</li>
+<li>SUM_TSW_WEBSOCKET_TIMEOUT – <code>WebSocket</code> 请求/响应模型下，响应超时次数</li>
+<li>SUM_TSW_WEBSOCKET_RESPONSE – <code>WebSocket</code> 请求/响应模型下，成功响应次数</li>
+<li>SUM_TSW_WEBSOCKET_PUSH – <code>WebSocket</code> 消息推送次数</li>
+</ul>
+<h2 id="CDN"><a href="#CDN" class="headerlink" title="CDN"></a>CDN</h2><ul>
+<li>SUM_TSW_CDN_CSS – 从CDN获取CSS的次数</li>
+<li>SUM_TSW_CDN_JS – 从CDN获取JS的次数</li>
+</ul>
+<h2 id="WEBSO"><a href="#WEBSO" class="headerlink" title="WEBSO"></a>WEBSO</h2><ul>
+<li>SUM_TSW_WEBSO_OK – <code>WEBSO</code>请求次数</li>
+<li>SUM_TSW_WEBSO_LIMIT – <code>WEBSO</code>命中柔性次数</li>
+<li>AVG_TSW_WNSDIFF_SIZE – <code>wnsdiff</code>体积，单位Bit</li>
+<li>AVG_TSW_WNSDIFF_COST – <code>wnsdiff</code>耗时，单位ms</li>
+</ul>
+
+    </div>
+</div>
+    </section>
+
+    <!-- After footer scripts -->
+    <script src="/js/jquery-2.2.4.min.js"></script>
+<script src="/js/popper.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/plugins.min.js"></script>
+<script>
+    var Page = function () {
+        var clickEvent = 'click';
+        var ui_a = $('.ul-side').children('li').children('a');
+        var li_h = $('.side-sub').eq(0).children('li').outerHeight(true);
+
+        var ul_a = $('.side-sub a');
+
+        var btn_menu = $('.nav-toggle a');
+        var side_nav = $('.side-nav');
+
+        return {
+            init: function () {
+                btn_menu.on(clickEvent, function () {
+                    if (!this.flag) {
+                        side_nav.addClass('open');
+                    } else {
+                        side_nav.removeClass('open');
+                    }
+                    this.flag = !this.flag;
+                });
+                ui_a.on(clickEvent, function () {
+
+                    var ul = $(this).next();
+                    var li_len = ul.children().length;
+
+
+                    if (!this.flag) {
+                        $(this).attr('class', 'current open');
+                        ul.css('height', li_len * li_h);
+                    } else {
+                        $(this).attr('class', '');
+                        ul.css('height', 0);
+                    }
+                    this.flag = !this.flag;
+
+                });
+
+                ul_a.on(clickEvent, function () {
+                    ul_a.attr('class', '');
+                    $(this).attr('class', 'current');
+
+                });
+                ui_a.eq(0).click();
+            }
+        }
+    }
+
+    Page().init();
+</script>
+</body>
+</html>
